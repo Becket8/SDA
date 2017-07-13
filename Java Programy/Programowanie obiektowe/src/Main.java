@@ -2,7 +2,6 @@ import Folder1.Pracownik;
 
 public class Main {
     public static void main(String[] args) {
-        String imie = "Filip";
         Pracownik prezes = new Pracownik();
         Pracownik dyrektor = new Pracownik();
 
@@ -14,5 +13,6 @@ public class Main {
         prezes.Opis();
         dyrektor.OpiszPracownika();
         System.out.println("Prezes: " + prezes.imie+"\nNazwisko: " + prezes.nazwisko);
+
     }
 }
