@@ -11,7 +11,6 @@ public class Point {
         z= Math.sqrt(x*x+y*y);
         wynik = z;
 
-        System.out.println("Odleglosc to: "+ this.wynik);
         return wynik;
     }
 

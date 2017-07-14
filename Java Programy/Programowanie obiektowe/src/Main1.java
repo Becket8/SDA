@@ -8,7 +8,8 @@ public class Main1 {
         P1.y = 1.0;
         P2.x = 5.0;
         P2.y = 5.0;
-        P1.DistanceFromOrigin();
+        System.out.println(P1.DistanceFromOrigin());
+
 
     }
 }
