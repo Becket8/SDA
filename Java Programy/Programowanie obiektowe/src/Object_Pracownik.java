@@ -1,6 +1,6 @@
-import Folder1.Pracownik;
+import Klasy.Pracownik;
 
-public class Main {
+public class Object_Pracownik {
     public static void main(String[] args) {
         Pracownik prezes = new Pracownik();
         Pracownik dyrektor = new Pracownik();

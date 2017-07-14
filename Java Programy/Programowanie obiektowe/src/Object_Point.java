@@ -1,6 +1,6 @@
-import Folder1.Point;
+import Klasy.Point;
 
-public class Main1 {
+public class Object_Point {
     public static void main(String[] args) {
         Point P1 = new Point();
         Point P2 = new Point();

@@ -1,4 +1,4 @@
-package Folder1;
+package Klasy;
 
 public class Pracownik {
     // Deklaracja pola  w klasie
