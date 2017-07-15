@@ -6,15 +6,17 @@ public class Pracownik {
     public String nazwisko;
     public int wiek;
     public float pensja;
-    public Pracownik(){
+
+    public Pracownik() {
         pensja = 2000;
     }
+
     //Metoda klasy Pracownik
-    public void Opis(){
+    public void Opis() {
         System.out.println("Pracownik");
     }
 
-    public void OpiszPracownika(){
+    public void OpiszPracownika() {
         System.out.println("Imie: " + this.imie + "\nNazwisko: " + this.nazwisko);
     }
 }
