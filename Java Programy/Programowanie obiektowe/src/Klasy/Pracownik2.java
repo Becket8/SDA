@@ -54,4 +54,8 @@ public class Pracownik2 {
         }
 
     }
+
+    public void describeEmploee() {
+        System.out.println("Name: " + this.name + "\nSurname: " + this.surname + "\nAge: " + this.age);
+    }
 }

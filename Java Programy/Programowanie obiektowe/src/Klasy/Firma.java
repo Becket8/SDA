@@ -1,24 +1,30 @@
 package Klasy;
 
 public class Firma extends Pracownik2 {
+    private String name;
     private Pracownik2[] pracownicy;
+    private int numberOfEmployees;
 
 
     public Firma() {
-       pracownicy = new Pracownik2[10];
+        pracownicy = new Pracownik2[10];
+        numberOfEmployees = 0;
+    }
+    //Metoda ktora wszystkich wyswietli wszystkich pracownikow
+    public void SpisPracownikow() {
+        for (Pracownik2 i : pracownicy) {
+            i.describeEmploee();
+        }
+    }
+    //metoda dodawania pracownikow
+    public void addEmployee(Pracownik2 employee){
+        pracownicy[numberOfEmployees] =employee ;
+        numberOfEmployees++;
+
     }
 
-    public String[] SpisPracownikow(String[] pracownicy) {
-        for (int i=0;i<pracownicy.length;i++){
-            String dane  = this.getName();
-            pracownicy[i] = dane;
-            System.out.println(pracownicy[i]);
-        }
-        return pracownicy;
-        }
 
-    }
-
+}
 
 
 //napisac metode ktora wyswietli wszystkich pracownikow
