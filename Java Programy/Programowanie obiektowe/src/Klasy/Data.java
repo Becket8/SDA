@@ -15,10 +15,9 @@ public class Data {
 
     public void start() {
         boolean exit = false;
-
         while (exit == false) {
-        System.out.println("Wybierz opcje: " + "n1.Wybierz nowego pracownika: " + "\n2.Usun pracownika" + "\n3.Wypisz pracownikow" + "\n4.Wyjdz z programu");
-        int option = sc.nextInt();
+            System.out.println("Wybierz opcje: " + "\n1.Wybierz nowego pracownika: " + "\n2.Usun pracownika" + "\n3.Wypisz pracownikow" + "\n4.Wyjdz z programu");
+            int option = sc.nextInt();
 
             switch (option) {
                 case 1: {
@@ -26,12 +25,12 @@ public class Data {
                     break;
                 }
                 case 2: {
-
+                    getEmploeeWithHighestSalary();
                     break;
                 }
                 case 3: {
-                    printAllEmploees();
-                    break:
+                    printAllEmpoyees();
+                    break;
                 }
                 case 4: {
                     exit = true;
@@ -50,7 +49,7 @@ public class Data {
     }
 
     public void addEmploeeToMyCompany() {
-        Pracownik2 nextEmp = new Pracownik2();
+        Employee nextEmp = new Employee();
         System.out.println("Podaj imie: ");
         nextEmp.setName(sc.next());
 
@@ -72,8 +71,25 @@ public class Data {
 
     }
 
-    public void printAllEmploees() {
-        myCompany.SpisPracownikow();
-}
+    public void printAllEmployeesBad() {
+        myCompany.SpisPracownikowZle();
+    }
+
+    public void printAllEmpoyees() {
+        myCompany.printEmploees();
+    }
+
+    public void coutAverageSalary() {
+        myCompany.coutAverageSalary();
+    }
+
+    public void coutAverageAge() {
 
     }
+
+    public void getEmploeeWithHighestSalary() {
+        myCompany.getEmploeeWithHighestSalary();
+
+    }
+
+}

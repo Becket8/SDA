@@ -1,6 +1,6 @@
 package Klasy;
 
-public class Pracownik2 {
+public class Employee {
 
     private String name;
     private String surname;
@@ -8,7 +8,7 @@ public class Pracownik2 {
     private int salary;
 
 
-    public Pracownik2() {
+    public Employee() {
 
     }
 
