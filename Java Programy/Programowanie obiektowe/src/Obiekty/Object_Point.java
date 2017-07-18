@@ -1,4 +1,6 @@
-import Klasy.Point;
+package Obiekty;
+
+import Klasy.Mathematic.Point;
 
 public class Object_Point {
     public static void main(String[] args) {

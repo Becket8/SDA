@@ -1,4 +1,4 @@
-package Klasy;
+package Klasy.Company;
 
 public class Employee {
 

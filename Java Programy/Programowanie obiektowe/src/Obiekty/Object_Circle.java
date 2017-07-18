@@ -1,4 +1,6 @@
-import Klasy.Circle;
+package Obiekty;
+
+import Klasy.Mathematic.Circle;
 
 
 public class Object_Circle {

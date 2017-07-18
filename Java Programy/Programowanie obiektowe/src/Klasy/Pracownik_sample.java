@@ -1,19 +1,19 @@
 package Klasy;
 
-public class Pracownik {
+public class Pracownik_sample {
     // Deklaracja pola  w klasie
     public String imie; // <===pole
     public String nazwisko;
     public int wiek;
     public float pensja;
 
-    public Pracownik() {
+    public Pracownik_sample() {
         pensja = 2000;
     }
 
-    //Metoda klasy Pracownik
+    //Metoda klasy Pracownik_sample
     public void Opis() {
-        System.out.println("Pracownik");
+        System.out.println("Pracownik_sample");
     }
 
     public void OpiszPracownika() {

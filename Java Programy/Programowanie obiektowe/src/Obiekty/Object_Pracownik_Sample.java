@@ -1,9 +1,11 @@
-import Klasy.Pracownik;
+package Obiekty;
 
-public class Object_Pracownik {
+import Klasy.Pracownik_sample;
+
+public class Object_Pracownik_Sample {
     public static void main(String[] args) {
-        Pracownik prezes = new Pracownik();
-        Pracownik dyrektor = new Pracownik();
+        Pracownik_sample prezes = new Pracownik_sample();
+        Pracownik_sample dyrektor = new Pracownik_sample();
 
         prezes.imie = "Jan";
         prezes.nazwisko = "Kowalski";

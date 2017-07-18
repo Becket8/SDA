@@ -1,4 +1,4 @@
-package Klasy;
+package Klasy.Company;
 
 
 import java.util.Scanner;

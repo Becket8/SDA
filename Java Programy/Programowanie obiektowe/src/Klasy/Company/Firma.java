@@ -1,4 +1,6 @@
-package Klasy;
+package Klasy.Company;
+
+import Klasy.Company.Employee;
 
 public class Firma {
     private String name;

@@ -1,4 +1,4 @@
-package Klasy;
+package Klasy.Mathematic;
 
 public class Circle {
     public float radius;

@@ -1,4 +1,4 @@
-package Klasy;
+package Klasy.Mathematic;
 
 public class Point {
     public float x;

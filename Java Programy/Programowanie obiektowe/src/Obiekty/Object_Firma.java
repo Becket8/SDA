@@ -1,4 +1,6 @@
-import Klasy.Data;
+package Obiekty;
+
+import Klasy.Company.Data;
 
 public class Object_Firma {
     public static void main(String[] args) {
