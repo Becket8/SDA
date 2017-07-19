@@ -7,15 +7,18 @@ public class Author {
     private String surname;
     private int age;
 
-    public Author(String name) {
-
+    public Author(int age) {
+        this.age = age;
     }
 
     public Author(String name, String surname) {
-
+        this.name = name;
+        this.surname = surname;
     }
 
     public Author(String name, String surname, int age) {
+        this(name,surname);
+        this.age = age;
 
     }
 
