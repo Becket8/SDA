@@ -24,98 +24,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Klasy/Overloading/Student.java">
+      <file leaf-file-name="Object_Matrix.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Obiekty/Object_Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
               <folding>
-                <element signature="e#356#357#0" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
-                <element signature="e#580#581#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-                <element signature="e#792#793#0" expanded="true" />
-                <element signature="e#842#843#0" expanded="true" />
-                <element signature="e#877#878#0" expanded="true" />
-                <element signature="e#911#912#0" expanded="true" />
-                <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#1008#1009#0" expanded="true" />
-                <element signature="e#1035#1036#0" expanded="true" />
-                <element signature="e#1061#1062#0" expanded="true" />
-                <element signature="e#1096#1097#0" expanded="true" />
-                <element signature="e#1126#1127#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Program.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Klasy/Overloading/Program.java">
+      <file leaf-file-name="Matrix.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Klasy/Mathematic/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rectangle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Klasy/Overloading/Rectangle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <element signature="e#348#349#0" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MathHelper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Klasy/Overloading/MathHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Author.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Klasy/Overloading/Author.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-              <folding>
-                <element signature="e#154#155#0" expanded="true" />
-                <element signature="e#184#185#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#474#475#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#580#581#0" expanded="true" />
-                <element signature="e#610#611#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
-                <element signature="e#694#695#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+                <element signature="e#499#500#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
+                <element signature="e#636#637#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,13 +102,13 @@
         <option value="$PROJECT_DIR$/src/Obiekty/Object_Point.java" />
         <option value="$PROJECT_DIR$/src/Obiekty/Object_Pracownik_Sample.java" />
         <option value="$PROJECT_DIR$/src/Klasy/Pracownik_sample.java" />
-        <option value="$PROJECT_DIR$/src/Obiekty/Object_Matrix.java" />
-        <option value="$PROJECT_DIR$/src/Klasy/Mathematic/Matrix.java" />
         <option value="$PROJECT_DIR$/src/Klasy/Overloading/Student.java" />
         <option value="$PROJECT_DIR$/src/Klasy/Overloading/Author.java" />
         <option value="$PROJECT_DIR$/src/Klasy/Overloading/Rectangle.java" />
         <option value="$PROJECT_DIR$/src/Klasy/Overloading/Program.java" />
         <option value="$PROJECT_DIR$/src/Klasy/Overloading/MathHelper.java" />
+        <option value="$PROJECT_DIR$/src/Obiekty/Object_Matrix.java" />
+        <option value="$PROJECT_DIR$/src/Klasy/Mathematic/Matrix.java" />
       </list>
     </option>
   </component>
@@ -181,10 +119,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="14" />
-    <option name="y" value="9" />
-    <option name="width" value="1598" />
-    <option name="height" value="858" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -214,56 +152,7 @@
       <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Programowanie obiektowe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Programowanie obiektowe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Programowanie obiektowe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Programowanie obiektowe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Programowanie obiektowe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Programowanie obiektowe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Programowanie obiektowe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Klasy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
     </panes>
@@ -291,7 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager" selected="Application.Object_Matrix">
     <configuration default="false" name="Object_Pracownik_Sample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Obiekty.Object_Pracownik_Sample" />
@@ -801,8 +690,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Program" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Object_Matrix" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Object_Matrix" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Program" />
         <item index="2" class="java.lang.String" itemvalue="Application.Object_Pracownik_Sample" />
         <item index="3" class="java.lang.String" itemvalue="Application.Object_Firma" />
         <item index="4" class="java.lang.String" itemvalue="Application.Object_Circle" />
@@ -852,16 +741,16 @@
       <workItem from="1499962217658" duration="7635000" />
       <workItem from="1500305506913" duration="11688000" />
       <workItem from="1500392065710" duration="11985000" />
-      <workItem from="1500477898310" duration="9538000" />
+      <workItem from="1500477898310" duration="10916000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40885000" />
+    <option name="totallyTimeSpent" value="42263000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="9" width="1598" height="858" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -871,11 +760,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3364486" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25094816" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25094816" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -911,13 +800,13 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39891306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2670227" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2670227" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3364486" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3364486" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25094816" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977304" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1287,22 +1176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Obiekty/Object_Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Klasy/Mathematic/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Klasy/Overloading/Author.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1323,6 +1196,39 @@
             <element signature="e#782#783#0" expanded="true" />
             <element signature="e#812#813#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Klasy/Overloading/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Klasy/Overloading/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Klasy/Overloading/MathHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1357,36 +1263,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Klasy/Overloading/Rectangle.java">
+    <entry file="file://$PROJECT_DIR$/src/Obiekty/Object_Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
           <folding>
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Klasy/Overloading/Program.java">
+    <entry file="file://$PROJECT_DIR$/src/Klasy/Mathematic/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Klasy/Overloading/MathHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="136">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

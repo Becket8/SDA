@@ -3,15 +3,24 @@ package Obiekty;
 
 import Klasy.Mathematic.Matrix;
 
+import java.util.Scanner;
+
 public class Object_Matrix {
     public static void main(String[] args) {
-        Matrix matrix = new Matrix();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Podaj wymiary macierzy 1: ");
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        System.out.println("Podaj wymiary macierzy 2: ");
+        int f = sc.nextInt();
+        int d = sc.nextInt();
+        Matrix matrix = new Matrix(m,n);
         matrix.initializeMatrix();
         matrix.printMatrix();
-        Matrix matrix2 = new Matrix();
+        Matrix matrix2 = new Matrix(f,d);
         matrix2.initializeMatrix();
         matrix2.printMatrix();
-        Matrix matrix3 = new Matrix();
+        Matrix matrix3 = new Matrix(m,n);
         matrix3.initializeMatrix();
         matrix3.printMatrix();
         System.out.println("Dodawanie macierzy: ");

@@ -3,17 +3,19 @@ package Klasy.Mathematic;
 import java.util.Scanner;
 
 public class Matrix {
+    Scanner sc = new Scanner(System.in);
     private int[][] matrix;
     private int m;
     private int n;
 
-    public Matrix()
+    public Matrix(int m, int n)
 
     {
-        m = 3;
-        n = 3;
-        matrix = new int[m][n];
+        this.m = m;
+        this.n = n;
+        this.matrix = new int[m][n];
     }
+
 
 
     public int[][] getMatrix() {
@@ -41,7 +43,6 @@ public class Matrix {
     }
 
     public void initializeMatrix() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Podaj elementy macierzy: ");
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -65,7 +66,7 @@ public class Matrix {
     }
 
     public Matrix addMatrix(Matrix matrix2) {
-        Matrix summary = new Matrix();
+        Matrix summary = new Matrix(m,n);
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -78,7 +79,7 @@ public class Matrix {
     }
 
     public Matrix subMatrix(Matrix matrix3) {
-        Matrix summary2 = new Matrix();
+        Matrix summary2 = new Matrix(m,n);
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 summary2.getMatrix()[i][j] = this.matrix[i][j] - matrix3.getMatrix()[i][j];
