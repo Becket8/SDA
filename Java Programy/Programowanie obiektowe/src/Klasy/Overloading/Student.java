@@ -2,13 +2,20 @@ package Klasy.Overloading;
 
 public class Student {
     private String name;
-    private String subname;
+    private String surname;
     private int age;
     private int yearOfStudies;
     private int indexNumber;
 
     public Student() {
 
+    }
+    public Student(String name, String surname){
+        this.name = name;
+        this.surname = surname;
+    }
+    public Student(int age){
+        this.age = age;
     }
 
     public String getName() {
@@ -19,12 +26,12 @@ public class Student {
         this.name = name;
     }
 
-    public String getSubname() {
-        return subname;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setSubname(String subname) {
-        this.subname = subname;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     public int getYearOfStudies() {
