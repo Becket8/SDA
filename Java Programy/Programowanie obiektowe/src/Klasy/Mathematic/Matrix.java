@@ -76,5 +76,16 @@ public class Matrix {
         return summary;
 
     }
+
+    public Matrix subMatrix(Matrix matrix3) {
+        Matrix summary2 = new Matrix();
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                summary2.getMatrix()[i][j] = this.matrix[i][j] - matrix3.getMatrix()[i][j];
+            }
+
+        }
+        return summary2;
+    }
 }
 
