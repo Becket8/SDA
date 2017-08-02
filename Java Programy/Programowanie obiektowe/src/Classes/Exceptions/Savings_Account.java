@@ -13,16 +13,17 @@ public class Savings_Account implements Account {
     }
 
     @Override
-    public void withdraw(double amount2) {
+    public double withdraw(double amount2) {
         try {
-            if (amount2 <= balance)
-                balance-=amount2;
-            System.out.println("Chcesz wyplacic kwote " + amount2 +"."+"\nTwoj bilans bedzie wynosil " + balance );
-
+            if (amount2 <= balance) {
+                balance -= amount2;
+                System.out.println("Chcesz wyplacic kwote " + amount2 + "." + "\nTwoj bilans bedzie wynosil " + balance);
+            }
 
         } catch (Exception a) {
             System.out.println("Nie mozna wyplacic wiecej niz jest na koncie");
         }
+    return balance;
     }
 
     @Override

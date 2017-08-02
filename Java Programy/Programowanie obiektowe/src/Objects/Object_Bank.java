@@ -11,8 +11,8 @@ public class Object_Bank {
         Scanner sc = new Scanner(System.in);
         System.out.println("Podaj kwote wyplaty: ");
         double amount = sc.nextDouble();
-        Savings_Account account = new Small_Account();
-        account.withdraw(amount);
+        Small_Account account = new Small_Account();
+        account.withdrawSmallAccount(amount);
 
 
     }

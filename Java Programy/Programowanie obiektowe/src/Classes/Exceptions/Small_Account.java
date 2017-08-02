@@ -8,19 +8,15 @@ public class Small_Account extends Savings_Account {
 
     }
 
-    @Override
-    public void withdraw(double amount2) {
+    public double withdrawSmallAccount(double amount2) {
         double amount = 1000.0;
         if (amount2 <= amount) {
-            System.out.println("Wypłacono " + amount2);
-
-
-        }else{
-            System.out.println("Nie mozesz wyplacic wiecej niz 1000 zł");
-
+            System.out.println("Nie przekroczono limitu");
+        } else {
+            System.out.println("Przekroczono limit");
         }
 
-
+        return withdraw(amount2);
     }
 
 }
