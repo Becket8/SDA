@@ -1,4 +1,4 @@
-
+package Classes;
 
 public class Stack_array {
     private int[] stack;
@@ -20,7 +20,6 @@ public class Stack_array {
         return this.stack[this.counter] = element;
 
     }
-
 
 }
 
