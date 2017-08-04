@@ -10,9 +10,6 @@ public class ObjectList {
         queue.add(5);
         queue.add(6);
         queue.add(7);
-
-        queue.print();
-
-        queue.printReverse();
+        queue.addSorted();
     }
 }
