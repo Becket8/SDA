@@ -64,15 +64,18 @@ public class List {
                     temp.setPrev(current.getPrev());
                     current.setPrev(temp);
                     temp.setNext(current);
-                    if(temp.getPrev()!=null)
-                    temp.getPrev().setNext(temp);
+                    if (temp.getPrev() != null) {
+                        temp.getPrev().setNext(temp);
+                    } else {
+                        this.first = temp;
+                    }
                     isAdded = true;
                 }
-                    current.setNext(temp);
+                current.setNext(temp);
 
 
             }
-            if(!isAdded){
+            if (!isAdded) {
                 temp.getPrev(this.last);
                 this.last.setNext(temp);
                 this.last = temp;
