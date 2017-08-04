@@ -11,12 +11,13 @@ public class Object_Stack_Array {
         Queue_array start = new Queue_array();
         start.setSize(n);
         start.setQueue(n);
+
         for(int i =0;i< n;i++){
             System.out.println("Podaj liczby do tablicy");
-            int elemnet = sc.nextInt();
-            elemnet = start.queue[i];
-
+            int element = sc.nextInt();
+            element = start.queue[i];
         }
+
 
         System.out.println("Wyswietli teraz pierwszy element");
         System.out.println(start.get());

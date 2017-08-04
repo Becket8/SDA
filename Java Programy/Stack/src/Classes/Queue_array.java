@@ -38,8 +38,9 @@ public class Queue_array {
     public int get() {
         if (this.start >= this.size && this.index != 0) {
             this.start = 0;
-            this.flag = true;
+            this.flag = false;
         }
+
         if (this.start != this.index || this.flag) {
             return this.queue[this.start++];
         }
