@@ -1,8 +1,8 @@
-import Classes.List;
+import Classes.ListMergeSort;
 
 public class ObjectList {
     public static void main(String[] args) {
-        List queue = new List();
+        ListMergeSort queue = new ListMergeSort();
         queue.add(4);
         queue.add(5);
         queue.add(8);
@@ -10,6 +10,6 @@ public class ObjectList {
         queue.add(2);
         queue.add(3);
         queue.add(5);
-        queue.sort();
+        queue.add(5);
     }
 }
