@@ -50,7 +50,7 @@ public class List {
         }
     }
 
-    public void addSorted(int element) {
+    /*public void addSorted(int element) {
         ListElement temp = new ListElement(element);
         if (this.first == null) {
             this.first = temp;
@@ -59,7 +59,6 @@ public class List {
             ListElement current = this.first;
             boolean isAdded = false;
             while (current != null && !isAdded) {
-                current = current.getNext();
                 if (current.getValue() > temp.getValue()) {
                     temp.setPrev(current.getPrev());
                     current.setPrev(temp);
@@ -72,8 +71,7 @@ public class List {
                     isAdded = true;
                 }
                 current.setNext(temp);
-
-
+                current = current.getNext();
             }
             if (!isAdded) {
                 temp.getPrev(this.last);
@@ -83,5 +81,48 @@ public class List {
         }
 
 
+    }*/
+
+    public void sort() {
+        ListElement current = this.first;
+        boolean isSorted = true;
+
+        while (isSorted) {
+
+
+            isSorted = false;
+
+            if (current != null) {
+
+                ListElement next = current.getNext();
+                while (current != null) {
+
+                    if (current.getValue() > next.getValue()) {
+                        isSorted = true;
+                        next.setPrev(current.getPrev());
+                        current.setPrev(next);
+                        current.setNext(next.getNext());
+                        next.setNext(current);
+                        if (current.getPrev() != null) {
+                            current.getNext().setPrev(current);
+                        }
+                        if (next.getPrev() != null) {
+                            next.getPrev().setNext(next);
+
+                        } else {
+                            this.first = next;
+                            next = current.getNext();
+                        }
+                    } else {
+                        current = current.getNext();
+                        next = next.getNext();
+                    }
+
+
+                }
+            }
+        }
     }
 }
+
+
