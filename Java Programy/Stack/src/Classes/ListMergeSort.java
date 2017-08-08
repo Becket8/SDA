@@ -1,4 +1,4 @@
-/*package Classes;
+package Classes;
 
 
 public class ListMergeSort {
@@ -35,7 +35,7 @@ public class ListMergeSort {
 
     }
 
-public void add(ListElement element) {
+public void add(int element) {
         this.counter++;
         ListElement temp = new ListElement(element);
         temp.setPrev(this.last);
@@ -73,7 +73,7 @@ public void add(ListElement element) {
                 current = current.getNext();
             }
             if (!isAdded) {
-                temp.getPrev(this.last);
+                temp.setPrev(this.last);
                 this.last.setNext(temp);
                 this.last = temp;
             }
@@ -81,4 +81,4 @@ public void add(ListElement element) {
 
 
     }
-}*/
+}
