@@ -50,7 +50,7 @@ public class List {
         }
     }
 
-    /*public void addSorted(int element) {
+    public void addSorted(int element) {
         ListElement temp = new ListElement(element);
         if (this.first == null) {
             this.first = temp;
@@ -70,18 +70,17 @@ public class List {
                     }
                     isAdded = true;
                 }
-                current.setNext(temp);
                 current = current.getNext();
             }
             if (!isAdded) {
-                temp.getPrev(this.last);
+                temp.setPrev(this.last);
                 this.last.setNext(temp);
                 this.last = temp;
             }
         }
 
 
-    }*/
+    }
 
     public void sort() {
         ListElement current = this.first;

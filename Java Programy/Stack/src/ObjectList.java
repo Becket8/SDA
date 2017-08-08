@@ -1,15 +1,14 @@
-import Classes.ListMergeSort;
+import Classes.List;
 
 public class ObjectList {
     public static void main(String[] args) {
-        ListMergeSort queue = new ListMergeSort();
-        queue.add(4);
-        queue.add(5);
-        queue.add(8);
-        queue.add(1);
-        queue.add(2);
-        queue.add(3);
-        queue.add(5);
-        queue.add(5);
+        List queue = new List();
+        queue.addSorted(4);
+        queue.addSorted(5);
+        queue.addSorted(2);
+        queue.addSorted(1);
+        queue.addSorted(8);
+        queue.addSorted(3);
+        queue.printReverse();
     }
 }
