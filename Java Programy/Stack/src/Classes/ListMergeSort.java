@@ -15,13 +15,25 @@ public class ListMergeSort {
 
     public ListMergeSort() {
 
+
+    }
+
+
+    public ListElement getFirst(){
+        return this.first;
+
+    }
+    public ListElement getLast(){
+        return this.last;
     }
     public void mergeLists(ListMergeSort list1){
 
+
     }
 
-    public void findMiddle() {
+    public void sort() {
         int newCounter = (int) Math.floor(this.counter);
+
         ListElement current = this.first;
         for (int i = 0; i < newCounter; i++) {
             current = current.getNext();
@@ -32,6 +44,21 @@ public class ListMergeSort {
 
         current.getPrev().setNext(null);
         current.setPrev(null);
+
+        if(newCounter>1){
+            newList1.sort();
+
+        }
+        if((this.counter = newCounter)>1){
+            newList2.sort();
+
+        }
+
+        newList1.mergeLists(newList2);
+
+        this.first = newList1.getFirst();
+        this.last = newList1.getLast();
+
 
     }
 
