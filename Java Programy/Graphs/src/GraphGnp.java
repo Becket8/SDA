@@ -1,4 +1,4 @@
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
+
 
 import java.util.Arrays;
 
@@ -22,13 +22,12 @@ public class GraphGnp {
     }
 
 
-    public static void main(String[] args) {
+    public static void Gnp () {
 
         boolean[][] result = generateGNP(4, 0.5);
         for (int i = 0; i < result.length; i++) {
             System.out.println(Arrays.toString(result[i]));
         }
-
 
     }
 }
