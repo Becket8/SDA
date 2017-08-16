@@ -3,7 +3,7 @@
  */
 public class RandomBinaryTree {
     public static void main(String[] args) {
-        Node firstNode = randomBinaryTree(6, 100, 0.5);
+        Node firstNode = randomBinaryTree(6, 10, 0.5);
         System.out.println("Preorder");
         preorder(firstNode);
         System.out.println("Inorder");
@@ -11,6 +11,64 @@ public class RandomBinaryTree {
         System.out.println("Postorder");
         postorder(firstNode);
 
+        System.out.println("Czy jest w drzewie: ");
+        System.out.println(findInTree(5, firstNode));
+        System.out.println("Wysokosc drzewa: ");
+        System.out.println(getTreeHeight(firstNode));
+
+
+    }
+
+    public static Node setBalancedTree(int n, int z) {
+        Node tree = new Node();
+        int nLeft = 0;
+        int nRight = 0;
+        if (n > 0){
+            nLeft = n/2;
+            nRight = n - nLeft - 1;
+
+            int x = (int)(Math.random()*z);
+            Node newElement = new Node();
+            newElement.setKey(x);
+            newElement.setLeft(setBalancedTree(nLeft,z));
+            newElement.setRight(setBalancedTree(nRight,z));
+
+        }
+
+            return tree;
+    }
+
+    public static boolean findInTree(int x, Node node) {
+        boolean isInTree = false;
+        if (node != null) {
+            if (x == node.getKey()) {
+                isInTree = true;
+            } else {
+                isInTree = findInTree(x, node.getLeft());
+                if (!isInTree) {
+                    isInTree = findInTree(x, node.getRight());
+                }
+            }
+        }
+
+
+        return isInTree;
+
+    }
+
+    public static int getTreeHeight(Node node) {
+        if (node == null) {
+            return 0;
+
+        } else {
+            int leftHeight = getTreeHeight(node.getLeft());
+            int rightHeight = getTreeHeight(node.getRight());
+            if (leftHeight > rightHeight) {
+                return leftHeight + 1;
+            } else {
+                return rightHeight + 1;
+            }
+        }
     }
 
     public static void preorder(Node node) {

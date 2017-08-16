@@ -1,7 +1,7 @@
 
 public class Node {
     private int id;
-    private int key;
+    private int key = 1;
     private Node right;
     private Node left;
 
@@ -35,7 +35,7 @@ public class Node {
 
     @Override
     public String toString() {
-        String temp = "Node: " + this.key + "key: " + this.id;
+        String temp = "Node: " + this.key + " key: " + this.id;
         int leftInt = 0;
         int rightInt = 0;
         if (this.right != null) {
