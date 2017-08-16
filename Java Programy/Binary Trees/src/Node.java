@@ -45,6 +45,6 @@ public class Node {
         if (this.left != null)
             leftInt = left.key;
         temp += " left: " + left;
-        return temp;
+        return temp + "\n";
     }
 }
