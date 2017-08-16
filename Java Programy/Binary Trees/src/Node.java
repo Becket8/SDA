@@ -1,8 +1,13 @@
 
 public class Node {
+    private int id;
     private int key;
     private Node right;
     private Node left;
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public int getKey() {
         return key;
@@ -30,14 +35,16 @@ public class Node {
 
     @Override
     public String toString() {
-        String temp = "";
+        String temp = "Node: " + this.key + "key: " + this.id;
         int leftInt = 0;
         int rightInt = 0;
         if (this.right != null) {
             rightInt = right.key;
+            temp += " right: " + right;
         }
         if (this.left != null)
             leftInt = left.key;
-        return "Node: " + this.key + " right: " + right + " left: " + left;
+        temp += " left: " + left;
+        return temp;
     }
 }
