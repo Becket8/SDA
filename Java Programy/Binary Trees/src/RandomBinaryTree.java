@@ -1,6 +1,4 @@
-/**
- * Created by RENT on 2017-08-16.
- */
+//Popraw linijki z wyswietlaniem, zeby nulla nie pokazywalo w klasie Node.
 public class RandomBinaryTree {
     public static void main(String[] args) {
         Node firstNode = randomBinaryTree(6, 10, 0.5);
@@ -15,27 +13,30 @@ public class RandomBinaryTree {
         System.out.println(findInTree(5, firstNode));
         System.out.println("Wysokosc drzewa: ");
         System.out.println(getTreeHeight(firstNode));
+        System.out.println("Rowne drzewo: ");
+        System.out.println(setBalancedTree(10, 4));
 
 
     }
 
     public static Node setBalancedTree(int n, int z) {
-        Node tree = new Node();
+        Node tree = null;
         int nLeft = 0;
         int nRight = 0;
-        if (n > 0){
-            nLeft = n/2;
+        if (n > 0) {
+            nLeft = Math.floorDiv(n, 2);
             nRight = n - nLeft - 1;
+            tree = new Node();
 
-            int x = (int)(Math.random()*z);
-            Node newElement = new Node();
-            newElement.setKey(x);
-            newElement.setLeft(setBalancedTree(nLeft,z));
-            newElement.setRight(setBalancedTree(nRight,z));
+            int x = (int) (Math.random() * z);
+
+            tree.setKey(x);
+            tree.setLeft(setBalancedTree(nLeft, z));
+            tree.setRight(setBalancedTree(nRight, z));
+            tree.toString();
 
         }
-
-            return tree;
+        return tree;
     }
 
     public static boolean findInTree(int x, Node node) {
