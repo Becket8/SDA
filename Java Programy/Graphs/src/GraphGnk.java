@@ -66,11 +66,9 @@ public class GraphGnk {
         Edge[] resultGnk = generateGnk(4, 3);
         for (int i = resultGnk.length - 1; i >= resultGnk.length - k; i--) {
             System.out.println(resultGnk[i].toString());
+
             // W domu ogarnij zeby rozszerzalo nam klase i dobrze porownywalo
 
         }
-        GraphGnp graph = new GraphGnp();
-        graph.Gnp();
-
     }
 }
