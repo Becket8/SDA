@@ -1,33 +1,22 @@
 
-
-import java.util.Arrays;
-
 public class GraphGnp {
+    public static boolean[][] generateGNP(int n, double p ) {
+        boolean[][] result = Structures.generateAArray(n);
 
-    public static boolean[][] generateGNP(int n, double p) {
-        boolean[][] result = new boolean[n][n];
         for (int i = 0; i < n - 1; i++) {
-            for (int j = i + 1; j < n; j++) {
-                if (Math.random() < p) {
+            for (int j = i+1; j < n; j++) {
+                if(Math.random() < p) {
                     result[i][j] = true;
                     result[j][i] = true;
-
                 }
-
             }
+            // Wypełnienie przekątnej TRUE
             result[i][i] = true;
         }
-        result[n - 1][n - 1] = true;
+        // Ostatni element
+        result[n-1][n-1] = true;
+
+
         return result;
-    }
-
-
-    public static void Gnp () {
-
-        boolean[][] result = generateGNP(4, 0.5);
-        for (int i = 0; i < result.length; i++) {
-            System.out.println(Arrays.toString(result[i]));
-        }
-
     }
 }

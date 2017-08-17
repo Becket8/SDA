@@ -1,9 +1,13 @@
-public class GraphGnk {
 
-    private static Edge[] generateGnk(int n, int k) {
-        int h = n * (n - 1) / 2;
-        Edge[] result = generateEdgeArray(n);
-        if (k <= h) {
+
+import java.util.ArrayList;
+
+public class GraphGnk {
+    public static Edge[] generateGnk(int n, int k) {
+        Edge[] result = Structures.generateEdgeArray(n);
+        int h = n*(n-1)/2;
+
+        if ( k <= h ) {
             while (k > 0) {
                 int r = (int) Math.floor(Math.random() * h);
 
@@ -14,61 +18,30 @@ public class GraphGnk {
                 k--;
             }
         }
+
         return result;
     }
 
+    public  static ArrayList<EdgeV2> generateGNKv2(int n, int k) {
+        Edge[] tmpResult = generateGnk(n, k);
 
-    private static Edge[] generateEdgeArray(int n) {
-        int h = n * (n - 1) / 2;
-        Edge[] result = new Edge[h];
-        int index = 0;
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = i + 1; j < n; j++) {
-                Edge newEdge = new Edge();
-                newEdge.a = i;
-                newEdge.b = j;
-                result[index] = newEdge;
-                index++;
-            }
+        ArrayList<EdgeV2> result = new ArrayList<>();
+
+
+        for (int i = 0; i < tmpResult.length; i++) {
+            EdgeV2 newObject = new EdgeV2();
+            newObject.a = tmpResult[i].a;
+            newObject.b = tmpResult[i].b;
+            result.add(newObject);
+        }
+
+        int h = n*(n-1)/2;
+        for (int i = h-1; i >= h-k; i--) {
+            result.get(i).c = true;
         }
 
         return result;
     }
 
 
-    private static boolean[][] transformEtoA(Edge[] struct, int k, int n) {
-        boolean[][] result = new boolean[n][n];
-        int h = struct.length;
-
-        for (int i = h - 1; i > h - 1 - k; i--) {
-            result[struct[i].a][struct[i].b] = true;
-            result[struct[i].b][struct[i].a] = true;
-        }
-
-        return result;
-    }
-
-    public static void main(String[] args) {
-
-       /* TEST FUNKCJA
-       int n = 4;
-        Edge[] test;
-
-        test = generateEdgeArray(n);
-        for (Edge e: test) {
-            System.out.println(e.toString());
-        }*/
-        int n = 4;
-        int k = 6;
-
-
-
-        Edge[] resultGnk = generateGnk(4, 3);
-        for (int i = resultGnk.length - 1; i >= resultGnk.length - k; i--) {
-            System.out.println(resultGnk[i].toString());
-
-            // W domu ogarnij zeby rozszerzalo nam klase i dobrze porownywalo
-
-        }
-    }
 }

@@ -1,4 +1,4 @@
-//Popraw linijki z wyswietlaniem, zeby nulla nie pokazywalo w klasie Node.
+
 public class RandomBinaryTree {
     public static void main(String[] args) {
         Node firstNode = randomBinaryTree(6, 10, 0.5);
