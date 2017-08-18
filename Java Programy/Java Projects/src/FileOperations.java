@@ -2,6 +2,9 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
 
 public class FileOperations {
 
@@ -69,10 +72,23 @@ public class FileOperations {
 
     }
 
+    public static List<String> readAllLines (String path){
+        List<String> lista = null;
+        try{
+            lista = Files.readAllLines(Paths.get(path));
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+        return lista;
+    }
+
+
     public static void main(String[] args) throws InterruptedException {
 
 
-        String calyPlik = FileOperations.readFileWithStringBuilder(PATH_TO_FILE);
-        System.out.println(calyPlik);
+        /*String calyPlik = FileOperations.readFileWithStringBuilder(PATH_TO_FILE);
+        System.out.println(calyPlik);*/
+
+        //For eachem druknij metode readAllLines
     }
 }
