@@ -1,3 +1,8 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.List;
 import java.util.Scanner;
 
@@ -13,6 +18,8 @@ public class Application {
                 case 1: {
                     int counter = 0;
                     System.out.println("NOWY QUIZ");
+                    System.out.println("Podaj swoj nick");
+                    String nick = sc.next();
                     Quiz quiz = new Quiz();
                     List<Question> questions = Quiz.readAllQuestions();
                     for (int i = 0; i < questions.size(); i++) {
@@ -28,7 +35,13 @@ public class Application {
 
                     }
                     System.out.println("Lista prawidłowych odpowiedzi: " + counter+"/"+questions.size());
-
+                    String score = nick + " " + counter+"/"+questions.size()+"\n";
+                    try {
+                        Path pathToResultFile =Paths.get("wyniki.txt");
+                        Files.write(pathToResultFile,score.getBytes(),Files.exists(pathToResultFile)? StandardOpenOption.APPEND: StandardOpenOption.CREATE);
+                    } catch (IOException e) {
+                        System.out.println("Nie mozna zapisac pliku");
+                    }
 
                     break;
                 }
