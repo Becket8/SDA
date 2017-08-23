@@ -13,13 +13,14 @@ public class Quiz {
         List<String> result = null;
 
         try {
-             result =  Files.readAllLines(Paths.get(PATH_TO_RESULTS));
+            result = Files.readAllLines(Paths.get(PATH_TO_RESULTS));
         } catch (IOException e) {
             e.printStackTrace();
         }
         return result;
     }
-    public static List<Question> readAllQuestions(){
+
+    public static List<Question> readAllQuestions() {
 
         List<String> questionsFromFile = null;
         List<Question> questionList = new ArrayList<>();
@@ -29,24 +30,19 @@ public class Quiz {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        for(int i =0; i < questionsFromFile.size(); i+=6){
+        for (int i = 0; i < questionsFromFile.size(); i += 6) {
             //mapowanie
             Question question = new Question();
             question.setTitle(questionsFromFile.get(i));
-            question.getAnswers().add(questionsFromFile.get(i+1));
-            question.getAnswers().add(questionsFromFile.get(i+2));
-            question.getAnswers().add(questionsFromFile.get(i+3));
-            question.getAnswers().add(questionsFromFile.get(i+4));
-            question.setCorrectAnswer(questionsFromFile.get(i+5));
+            question.getAnswers().add(questionsFromFile.get(i + 1));
+            question.getAnswers().add(questionsFromFile.get(i + 2));
+            question.getAnswers().add(questionsFromFile.get(i + 3));
+            question.getAnswers().add(questionsFromFile.get(i + 4));
+            question.setCorrectAnswer(questionsFromFile.get(i + 5));
             questionList.add(question);
 
         }
         return questionList;
     }
-    public static List<String> readOneQuestion(List<String>question){
 
-
-
-
-    }
 }
