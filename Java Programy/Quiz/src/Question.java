@@ -33,4 +33,13 @@ public class Question {
 
 
     }
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append(title).append("\n");
+        for (String a : answers) {
+            sb.append(a).append("\n");
+        }
+        return sb.toString();
+    }
 }

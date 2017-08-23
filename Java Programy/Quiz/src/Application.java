@@ -13,7 +13,7 @@ public class Application {
                     System.out.println("NOWY QUIZ");
                     Quiz quiz = new Quiz();
                     List<Question> questions = Quiz.readAllQuestions();
-                        List<Question> oneQuestion Quiz.readOneQuestion(questions);
+
                     break;
                 }
                 case 2: {
