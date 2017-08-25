@@ -39,10 +39,13 @@ public class Program {
     public static List<String> getWords(List<String> Text) {
         List<String> lines = Text;
         List<String> oneWord = new ArrayList<>();
-        String[] word = line
-                .replace(",", "")
-                .replace(".", "")
-                .split(" ")
+        for (String line : lines) {
+            String[] word = line
+                    .replace(",", "")
+                    .replace(".", "")
+                    .split(" ");
+
+            oneWord.addAll(Arrays.asList(word));
 
         }
 
@@ -66,5 +69,6 @@ public class Program {
         return mapOfWords;
     }
 
+    
 
 }
