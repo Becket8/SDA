@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Maven_Programs" />
         <module name="sda" />
+        <module name="TDD" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Maven_Programs" target="1.5" />
       <module name="sda" target="1.5" />
+      <module name="TDD" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
