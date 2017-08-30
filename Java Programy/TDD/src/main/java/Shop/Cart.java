@@ -18,16 +18,25 @@ public class Cart {
         listOfProducts.remove(product);
     }
 
-    public void sumPrice(List<Product> listOfProducts) {
-        
+    public double sumPrice(List<Product> listOfProducts) {
+        double sum = 0;
+        for (Product p : listOfProducts) {
+            sum = +p.getPrice();
+        }
 
+        return sum;
     }
 
     public void addDiscount(int percent) {
-
+        /*for (Product p : listOfProducts) {
+            double newPrice = p.getPrice() - (p.getPrice() * percent / 100);
+            p.setPrice(newPrice);
+        }*/
+        listOfProducts.forEach(p->p.setPrice(p.getPrice() - (p.getPrice() * percent / 100)));
     }
 
     public int getCartSize(Product listOfProducts) {
+        
 
     }
 }
