@@ -1,19 +1,27 @@
-package pl.sda.poznan.Bank;
-
+package pl.sda.poznan.bank;
 
 public class BankAccount {
-    private String name;
+    //imie
+    private String firstName;
+    //nazwisko
     private String surname;
+    //saldo
     private double balance;
-    private int checking = 1;
-    private int savings = 2;
 
-    public String getName() {
-        return name;
+    //Konstruktor przyjmujacy wszystkie pola
+    public BankAccount(String firstName, String surname, double balance) {
+        this.firstName = firstName;
+        this.surname = surname;
+        this.balance = balance;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    //gettery i settery
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getSurname() {
@@ -28,36 +36,12 @@ public class BankAccount {
         return balance;
     }
 
-    public BankAccount(String name, String surname, double balance) {
-        this.name = name;
-        this.surname = surname;
-        this.balance = balance;
-
-    }
-
-    public double deposit(double deposit) {
-        if (deposit >= 0) {
-            this.balance = +deposit;
-
-        } else {
-            throw new IllegalArgumentException("Amount has to be bigger than 0");
+    //metoda do wplaty srodkow
+    public double deposit(double amount){
+        if(amount <= 0){
+            throw new IllegalArgumentException("Amount has to be greater than 0");
         }
-
-        return balance;
-    }
-
-    public double withdraw(double amount, boolean branch) {
-        if (!branch) {
-            if (amount >= 50) {
-                throw new IllegalArgumentException("Amount cannot be higher then 50 zl");
-            } else {
-                balance -= amount;
-            }
-        } else {
-            System.out.println("Wypłata to " + amount);
-            this.balance -= amount;
-        }
-
+        this.balance += amount;
         return this.balance;
     }
 }

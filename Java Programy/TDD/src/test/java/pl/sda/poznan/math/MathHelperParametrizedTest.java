@@ -7,10 +7,11 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 
 @RunWith(Parameterized.class)
-public class MathHelperTest {
+public class MathHelperParametrizedTest {
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
@@ -19,13 +20,11 @@ public class MathHelperTest {
         });
     }
 
-    private int input;
-    private int expected;
+    @Parameterized.Parameter
+    public int input;
+    @Parameterized.Parameter(1)
+    public int expected;
 
-    public MathHelperTest(int input, int expected) {
-        this.input = input;
-        this.expected = expected;
-    }
 
     @Test
     public void test() {

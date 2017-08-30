@@ -1,29 +1,17 @@
-package Shop;
+package pl.sda.poznan.shop;
 
-/**
- * Created by RENT on 2017-08-30.
- */
 public class Product {
-
-    /* id-> int
-       name -> String
-       description
-       price*/
-
     private int id;
-    private double price;
     private String name;
     private String description;
+    private double price;
+
+
 
     public Product(int id, String name, double price) {
         this.id = id;
         this.name = name;
         this.price = price;
-
-    }
-
-    public Product() {
-
     }
 
     public int getId() {
@@ -42,19 +30,19 @@ public class Product {
         this.name = name;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public String getDescription() {
         return description;
     }
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
