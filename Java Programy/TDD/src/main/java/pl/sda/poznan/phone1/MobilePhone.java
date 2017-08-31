@@ -1,40 +1,21 @@
 package pl.sda.poznan.phone1;
 
-import java.util.Scanner;
+import lombok.extern.slf4j.Slf4j;
 
-/**
- * Created by RENT on 2017-08-31.
- */
+import java.util.ArrayList;
+
+@Slf4j
 public class MobilePhone {
+    private String myNumber;
+    private ArrayList<Contact> myContacts;
 
-    public void Options() {
-        boolean exit = false;
-        if (exit == false) {
-            System.out.println("Wybierz funkcje: " + "\n0. Wyjście z programu " + "\n1. Pokaż wszystkie kontakty "
-                    + "\n2. Dodaj nowy kontakt " + "\n3. Zmień istniejący kontakt "
-                    + "\n4. Usuń kontakt " + "\n5. Znajdź kontakt ");
-            Scanner scanner = new Scanner(System.in);
-            int opcja = scanner.nextInt();
-
-            switch (opcja) {
-                case 0: {
-
-                }
-                case 1: {
-
-                }
-                case 2: {
-
-                }
-                case 3: {
-
-                }
-                case 4: {
-
-                }
-                case 5: {
-                }
-            }
+    public  boolean addNewContact(Contact contact) {
+        if (myContacts.indexOf(contact) >= 0) {
+            log.info("Contact already exists");
+            return false;
         }
+        return true;
     }
 }
+
+

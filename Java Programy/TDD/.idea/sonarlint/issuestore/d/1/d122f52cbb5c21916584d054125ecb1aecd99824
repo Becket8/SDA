@@ -1,0 +1,6 @@
+
+6squid:S1643"Use a StringBuilder instead.(Ά¥†ώÿÿÿÿ
+6squid:S1643"Use a StringBuilder instead.(ΉΔ­–ϋÿÿÿÿ
+Jsquid:S1191"5Use classes from the Java API instead of Sun classes.(½‘
+}squid:UselessImportCheck"[Remove this unused import 'sun.reflect.generics.reflectiveObjects.NotImplementedException'.(½‘
+}squid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(•ÿ²άψÿÿÿÿ

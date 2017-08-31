@@ -1,0 +1,35 @@
+
+gsquid:HiddenFieldCheck";Rename "scanner" which hides the field declared at line 11.(ù ƒ‘üÿÿÿÿ8€ÏÌã+
+Ksquid:S00108")Either remove or fill this block of code.(·ÿ½äûÿÿÿÿ8é§ªÌã+
+Isquid:S1199"-Extract this nested code block into a method.(ÎŞèº8é§ªÌã+
+l
+squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(úÀôãùÿÿÿÿ8é§ªÌã+
+Hsquid:S1481",Remove this unused "surname" local variable.(ÈÛü©8“ŒæÌã+
+Ksquid:S00108")Either remove or fill this block of code.(ğÁ–Óûÿÿÿÿ8é§ªÌã+
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(¿ğÕ¦ùÿÿÿÿ8½àÔÌã+
+Nsquid:S1199"-Extract this nested code block into a method.(úÀôãùÿÿÿÿ8é§ªÌã+
+Ksquid:S00108")Either remove or fill this block of code.(úÀôãùÿÿÿÿ8é§ªÌã+
+Fsquid:S00108")Either remove or fill this block of code.(ÎŞèº8é§ªÌã+
+Nsquid:S1199"-Extract this nested code block into a method.(ğÁ–Óûÿÿÿÿ8é§ªÌã+
+Msquid:S1068",Remove this unused "contacts" private field.(‘ş Ñÿÿÿÿÿ8àäúÌã+
+Wsquid:S1854";Remove this useless assignment to local variable "surname".(ÈÛü©8“ŒæÌã+
+l
+squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(·ÿ½äûÿÿÿÿ8é§ªÌã+
+g
+squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(ÎŞèº8é§ªÌã+
+Fsquid:S00108")Either remove or fill this block of code.(Ó‚ï8é§ªÌã+
+l
+squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(ğÁ–Óûÿÿÿÿ8é§ªÌã+
+Z"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ğ¢¹×ıÿÿÿÿ8é§ªÌã+
+¨squid:S2681"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(¤‚ªùÿÿÿÿ8ÎÑæÌã+
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(„ˆŸ¾8ùÍÊÌã+
+Jsquid:S1481")Remove this unused "name" local variable.(¤‚ªùÿÿÿÿ8íéÑÌã+
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÍùÿÿÿÿ8é§ªÌã+
+Nsquid:S1199"-Extract this nested code block into a method.(·ÿ½äûÿÿÿÿ8é§ªÌã+
+Nsquid:S1199"-Extract this nested code block into a method.(Í‡¬‰úÿÿÿÿ8é§ªÌã+
+Ysquid:S1854"8Remove this useless assignment to local variable "name".(¤‚ªùÿÿÿÿ8Ù€ÓÌã+
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(¤÷ ğşÿÿÿÿ8é§ªÌã+
+Isquid:S1199"-Extract this nested code block into a method.(Ó‚ï8é§ªÌã+
