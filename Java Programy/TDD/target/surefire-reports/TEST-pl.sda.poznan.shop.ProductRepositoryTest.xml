@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="pl.sda.poznan.shop.ProductRepositoryTest" time="0.172" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="pl.sda.poznan.shop.ProductRepositoryTest" time="0.171" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2017.1.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,7 +63,7 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="pl.sda.poznan.shop.ProductRepositoryTest" name="getAllProductsFromDb" time="0.109"/>
-  <testcase classname="pl.sda.poznan.shop.ProductRepositoryTest" name="testDiscount2" time="0.063"/>
+  <testcase classname="pl.sda.poznan.shop.ProductRepositoryTest" name="testDiscount2" time="0.062"/>
   <testcase classname="pl.sda.poznan.shop.ProductRepositoryTest" name="testDiscount" time="0"/>
   <testcase classname="pl.sda.poznan.shop.ProductRepositoryTest" name="addProductToCart" time="0"/>
 </testsuite>

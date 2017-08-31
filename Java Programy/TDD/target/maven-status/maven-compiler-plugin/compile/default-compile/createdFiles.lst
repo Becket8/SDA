@@ -1,3 +1,4 @@
+pl\sda\poznan\phone1\Contact.class
 pl\sda\poznan\shop\Playground.class
 pl\sda\poznan\math\Calculator.class
 pl\sda\poznan\Application.class
@@ -6,6 +7,7 @@ pl\sda\poznan\shop\Playground$Customer.class
 pl\sda\poznan\shop\ProductRepository.class
 pl\sda\poznan\shop\Cart.class
 pl\sda\poznan\phone\Contact.class
+pl\sda\poznan\phone1\MobilePhone.class
 pl\sda\poznan\math\MathHelper.class
 pl\sda\poznan\shop\Product.class
 pl\sda\poznan\phone\MobilePhone.class

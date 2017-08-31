@@ -1,5 +1,6 @@
 package pl.sda.poznan.bank;
 
+
 public class BankAccount {
     //imie
     private String firstName;
