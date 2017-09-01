@@ -1,0 +1,22 @@
+
+S"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ğ¢¹×ıÿÿÿÿ
+Fsquid:S1068",Remove this unused "contacts" private field.(‘ş Ñÿÿÿÿÿ
+Gsquid:S1199"-Extract this nested code block into a method.(Í‡¬‰úÿÿÿÿ
+Gsquid:S1199"-Extract this nested code block into a method.(·ÿ½äûÿÿÿÿ
+Gsquid:S1199"-Extract this nested code block into a method.(ğÁ–Óûÿÿÿÿ
+Gsquid:S1199"-Extract this nested code block into a method.(úÀôãùÿÿÿÿ
+Bsquid:S1199"-Extract this nested code block into a method.(ÎŞèº
+Bsquid:S1199"-Extract this nested code block into a method.(Ó‚ï
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(¤÷ ğşÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(„ˆŸ¾
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(º‹‹‘ÿÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(¤ç€¿
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(¢Äœÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(¸ªßÓÿÿÿÿÿ
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(² öÀùÿÿÿÿ
