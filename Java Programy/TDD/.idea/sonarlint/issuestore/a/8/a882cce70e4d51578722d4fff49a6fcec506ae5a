@@ -1,5 +1,0 @@
-
-†"squid:ClassVariableVisibilityCheck"UMake FirstName a static final constant or non-public and provide accessors if needed.(¤στεωÿÿÿÿ
-€"squid:ClassVariableVisibilityCheck"TMake LastName a static final constant or non-public and provide accessors if needed.(χπΆ¥
-osquid:S00116"TRename this field "FirstName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤στεωÿÿÿÿ
-isquid:S00116"SRename this field "LastName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(χπΆ¥

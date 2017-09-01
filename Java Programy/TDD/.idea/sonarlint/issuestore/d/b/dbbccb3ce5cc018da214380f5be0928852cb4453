@@ -1,17 +1,0 @@
-
-L
-squid:S106"9Replace this use of System.out or System.err by a logger.(˜ÐÍ
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(ýß‚Óÿÿÿÿÿ
-M
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÙÊ”À
-nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(á•šá
-M
-squid:S106"9Replace this use of System.out or System.err by a logger.(½þ¥§
-Asquid:S1068",Remove this unused "myNumber" private field.(Ä›÷•
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÌÖ·ªþÿÿÿÿ
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ð¼Éˆûÿÿÿÿ
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(›ü¨‹ùÿÿÿÿ

@@ -4,14 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Created by RENT on 2017-08-31.
- */
 public class Main {
-    Scanner scanner = new Scanner(System.in);
+    private static MobilePhone mobilePhone = new MobilePhone("345-301-221");
+    private static Scanner scanner = new Scanner(System.in);
     private List<Contact> contacts = new ArrayList<>();
 
-    public void Options() {
+    public static void main(String[] Args) {
         boolean exit = false;
         do {
             System.out.println("Wybierz funkcje: " + "\n0. Wyjście z programu " + "\n1. Pokaż wszystkie kontakty "
@@ -27,37 +25,47 @@ public class Main {
 
                 }
                 case 1: {
-
+                    mobilePhone.showAllContacts();
+                    break;
                 }
                 case 2: {
-
+                    addNewContact();
+                    break;
                 }
                 case 3: {
-
+                    break;
                 }
                 case 4: {
-
+                    break;
                 }
                 case 5: {
+                    break;
                 }
             }
-        }while(!exit);
+        } while (!exit);
     }
 
-    public List<Contact> showAll(List<Contact> myContact){
 
-    return myContact;
-    }
-    public List<Contact> addNewContact(){
-        MobilePhone contact = new MobilePhone();
+    private static void addNewContact() {
 
-        if(contact.addNewContact())
+
         System.out.println("Podaj imię: ");
         String name = scanner.next();
-        System.out.println("Podaj nazwisko: " );
-        String surname = scanner.next();
+        System.out.println("Podaj numer: ");
+        Double number = scanner.nextDouble();
+        Contact newContact = Contact.createContact(name, number);
+        if (mobilePhone.addNewContact(newContact)) {
+            System.out.println("Dodano kontakt: " + name + " Numer: " + number);
 
+        }else
+            System.out.println("Nie mozna dodac kontaktu");
 
     }
+
+    private static void updateContact(){
+        if(mobilePhone.updateContact())
+        System.out.println("P");
+    }
+
 }
 
