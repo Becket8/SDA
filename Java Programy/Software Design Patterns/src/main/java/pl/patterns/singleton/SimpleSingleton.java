@@ -1,4 +1,4 @@
-package pl.patterns;
+package pl.patterns.singleton;
 
 /**
  * Created by RENT on 2017-09-01.
