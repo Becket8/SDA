@@ -1,8 +1,8 @@
 package pl.patterns
 
 import org.junit.*
-import SimpleSingleton
-import Test1
+import pl.patterns.singleton.SimpleSingleton
+import pl.patterns.singleton.Test1
 
 import static org.junit.Assert.*
 
