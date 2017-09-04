@@ -12,8 +12,7 @@ public class CarTest {
         Car car1 = new Car("audi","80",Colour.Blue);
         Car car2 = new Car("bmw","m5",Colour.Red);
 
-
-
+        assertEquals(car1, car2);
     }
 
 
