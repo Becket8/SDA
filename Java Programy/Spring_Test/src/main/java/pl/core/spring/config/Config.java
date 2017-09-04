@@ -11,13 +11,14 @@ import pl.core.spring.implementation.Pizza;
 @Configuration
 public class Config {
 
-    @Bean
-    public IPizza pizza(){
-        return new Pizza(15, "Diabelska");
-    }
 
-    @Bean
-    public IOrder Order(Pizza pizza){
-        return new Order(pizza);
-    }
+//@Bean
+//    public IPizza pizza(){
+//        return new Pizza(15, "Diabelska");
+//    }
+//
+//    @Bean
+//    public IOrder Order(Pizza pizza){
+//        return new Order(pizza);
+//    }
 }

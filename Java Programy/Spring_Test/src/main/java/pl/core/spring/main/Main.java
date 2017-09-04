@@ -4,6 +4,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource;
 import pl.core.spring.api.IOrder;
 import pl.core.spring.config.Config;
+import pl.core.spring.config.autoConfig;
 import pl.core.spring.implementation.Pizza;
 
 /**
@@ -12,7 +13,7 @@ import pl.core.spring.implementation.Pizza;
 public class Main {
     public static void main(String[] args) {
 
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(autoConfig.class);
         IOrder order = (IOrder)context.getBean("Order");
         order.printOrder();
     }

@@ -1,7 +1,8 @@
 package pl.core.spring.implementation;
-
+import org.springframework.stereotype.Component;
 import pl.core.spring.api.IOrder;
 
+@Component
 public class Order implements IOrder {
     private Pizza pizza;
 

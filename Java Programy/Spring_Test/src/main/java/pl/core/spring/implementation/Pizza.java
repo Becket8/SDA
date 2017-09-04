@@ -1,15 +1,16 @@
 package pl.core.spring.implementation;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import pl.core.spring.api.IPizza;
 
-/**
- * Created by Sowskin on 04.09.2017.
- */
+@Component
 public class Pizza implements IPizza {
     private int price;
     private String name;
 
-    public Pizza(int price, String name) {
+    public Pizza(@Value("12") int price,@Value("Diabelska") String name) {
+        super();
         this.price = price;
         this.name = name;
     }
