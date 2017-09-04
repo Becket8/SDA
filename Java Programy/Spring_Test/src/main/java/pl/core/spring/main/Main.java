@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(autoConfig.class);
-        IOrder order = (IOrder)context.getBean("Order");
+        IOrder order = context.getBean(IOrder.class);
         order.printOrder();
     }
 }
