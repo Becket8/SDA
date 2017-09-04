@@ -13,3 +13,13 @@ b
 .src\main\java\pl\sda\poznan\phone\Contact.java,2\5\253c311577c03ad8b3f7a691ed128ea5d4140eae
 c
 3src\main\java\pl\sda\poznan\phone1\MobilePhone.java,2\5\2568f37ea2c81f363a0204d06885cea490123daa
+e
+5src\test\java\pl\sda\poznan\bank\BankAccountTest.java,7\6\7631c0a11c6ce73b001763d3f8b12f0ff3ba1629
+g
+7src\test\java\pl\sda\poznan\excercise\GreetingTest.java,a\8\a8a1205e17e4b9481b3ecb3296dbcf00e421d732
+d
+4src\test\java\pl\sda\poznan\math\CalculatorTest.java,3\f\3f20f99a987fd5d746ce9f762c9479f0821fd9ab
+p
+@src\test\java\pl\sda\poznan\math\MathHelperParametrizedTest.java,c\1\c18e6792e35335933c5ce497f0ef375a2c933366
+d
+4src\test\java\pl\sda\poznan\math\MathHelperTest.java,5\a\5a95a5be2c2d817d45405ee0ac0c1a99e2ad9089
