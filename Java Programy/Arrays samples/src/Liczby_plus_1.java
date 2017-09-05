@@ -14,7 +14,8 @@ public class Liczby_plus_1 {
         }
         System.out.println("Liczby w tablicy podniesione o jeden to: " );
         for(int i = 0;i<liczby.length; i++){
-            System.out.println();
+            int plusOne = liczby[i]+= 1;
+            System.out.println(plusOne);
         }
 
 
