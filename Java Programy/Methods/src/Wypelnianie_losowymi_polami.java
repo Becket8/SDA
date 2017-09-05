@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -18,7 +19,7 @@ public class Wypelnianie_losowymi_polami {
         Scanner sc = new Scanner(System.in);
         int wielkosc = sc.nextInt();
         int[] tablica = new int [wielkosc];
-        System.out.println("Tablica to: " + InitializeWithRandomValues(tablica));
+        System.out.println("Tablica to: " + Arrays.toString(InitializeWithRandomValues(tablica)));
 
     }
 
