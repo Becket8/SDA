@@ -1,4 +1,4 @@
-package pl.patterns.factory.enumExample;
+package pl.patterns.enumExample;
 
 import pl.patterns.factory.JsonPersonFileReader;
 import pl.patterns.factory.PersonFileReader;
