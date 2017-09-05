@@ -25,3 +25,15 @@ w
 Gsrc\test\java\pl\patterns\factory\enumExample\PersonReaderFileType.java,a\8\a87301f4536cd22009792cd398318da6b6e40bcf
 z
 Jsrc\test\java\pl\patterns\factory\enumExample\EnumPersonReaderFactory.java,e\6\e697a7553476fa51fd3aa1d7f8042093c8ae2935
+^
+.src\main\java\pl\patterns\generic\Factory.java,a\b\abfa4d3792ecd439093e61a4b61da28e3445179a
+j
+:src\main\java\pl\patterns\generic\PersonReaderFactory.java,d\8\d8296a8afe4e029047e28539315c90916d2597d8
+o
+?src\main\java\pl\patterns\enumExample\PersonReaderFileType.java,f\0\f0ef8c336fff77cb4c37a5d74dc31da4240f32bb
+r
+Bsrc\main\java\pl\patterns\enumExample\EnumPersonReaderFactory.java,5\9\59411a103c1f9f53d26bc44eb4d343e0b6f85588
+_
+/src\main\java\pl\patterns\builder\Computer.java,d\f\df3af3edf281266441142fcd20e0c5f0d5471819
+c
+3src\test\java\pl\patterns\builder\ComputerTest.java,7\8\780791388795b23730c779e05ddc0f6c5c3cd378

@@ -17,9 +17,15 @@ public class ComputerTest {
                 .addHdd("Seagate 1TB")
                 .addRam("16 Gb").build();
 
-        
 
 
+
+    }
+    @Test
+    public void builderTest(){
+        Computer.ComputerBuilder builder = new Computer.ComputerBuilder();
+            builder.addMainboard("Intel G71");
+            builder.addRam("16gb ddr4 2133 Ghz");
     }
 
 }
