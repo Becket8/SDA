@@ -10,10 +10,10 @@ import static org.junit.Assert.*;
 public class StockObserverTest {
 
     @Test
-    public void test(){
+    public void test() {
         Stock stock = new Stock("Orlen", 10);
-    StockObserver orlenObserver = new StockObserver(stock);
-    stock.setPrice(20);
+        new StockObserver(stock);
+        stock.setPrice(20);
     }
 
 }
