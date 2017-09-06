@@ -14,6 +14,7 @@ public class StockObserverTest {
         Stock stock = new Stock("Orlen", 10);
         new StockObserver(stock);
         stock.setPrice(20);
+        stock.setPrice(10);
     }
 
 }
