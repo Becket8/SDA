@@ -6,7 +6,7 @@ package pl.patterns.observer;
 public abstract class Observer<T> {
     protected T observedObject;
 
-    public abstract void onChange (Object sender, PriceChangedEventArgs e);
+    protected abstract void onChange (T sender, PriceChangedEventArgs e);
 
 
 }

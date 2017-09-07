@@ -12,9 +12,11 @@ public class StockObserverTest {
     @Test
     public void test() {
         Stock stock = new Stock("Orlen", 10);
-        new StockObserver(stock);
+        new AdvanceStockObserver(stock);
         stock.setPrice(20);
         stock.setPrice(10);
+        stock.setPrice(40);
+        stock.setPrice(30);
     }
 
 }

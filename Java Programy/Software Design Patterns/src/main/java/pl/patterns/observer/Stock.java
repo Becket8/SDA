@@ -1,7 +1,7 @@
 package pl.patterns.observer;
 
 import lombok.Getter;
-;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +24,6 @@ public class Stock {
 
     public void setPrice(double price) {
         if (price == this.price) {
-            this.price = price;
             return;
         }
         double oldPrice = this.price;

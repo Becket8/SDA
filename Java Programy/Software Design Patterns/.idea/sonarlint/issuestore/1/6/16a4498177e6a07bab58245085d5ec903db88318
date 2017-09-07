@@ -1,7 +1,0 @@
-
-Vsquid:S1191"5Use classes from the Java API instead of Sun classes.(ì¿¸ıÿÿÿÿ8»×’Àå+
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ë¸¯Äùÿÿÿÿ8»×’Àå+
-wsquid:UselessImportCheck"IRemove this unused import 'com.sun.org.apache.xpath.internal.SourceTree'.(ì¿¸ıÿÿÿÿ8»×’Àå+
-rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(æ©åÎüÿÿÿÿ
-Tsquid:UselessImportCheck"+Remove this unused import 'java.util.Date'.(¸…¼ü8 ùÔÀå+
