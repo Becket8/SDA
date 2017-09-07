@@ -11,12 +11,13 @@ public abstract class Logger {
     }
 
     public void logMessage(LogLevel logLevel, String message) {
-        if (this.logLevel.ordinal() <= this.logLevel.ordinal()) {
+        if (this.logLevel.ordinal() >= this.logLevel.ordinal()) {
             write(message);
         }
-        if (nextLogger != null) {
+        else if (nextLogger != null) {
             nextLogger.logMessage(logLevel, message);
-        }
+        }else
+            System.out.println("Zadanie nie obsluzone");
     }
 
     protected abstract void write(String message);
