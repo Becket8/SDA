@@ -10,6 +10,6 @@ public class ErrorLogger extends Logger {
 
     @Override
     protected void write(String message) {
-        System.out.println("Logger 3 poziomu" + message);
+        System.out.println("Logger 3 poziomu " + message);
     }
 }

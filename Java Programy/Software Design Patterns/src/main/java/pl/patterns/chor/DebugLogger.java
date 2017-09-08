@@ -11,6 +11,6 @@ public class DebugLogger extends Logger {
 
     @Override
     protected void write(String message) {
-        System.out.println("Logger 2 poziomu" + message);
+        System.out.println("Logger 2 poziomu " + message);
     }
 }

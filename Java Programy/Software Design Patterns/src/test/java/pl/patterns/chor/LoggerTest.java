@@ -12,9 +12,8 @@ public class LoggerTest {
     @Test
     public void test() {
 
-      LogFacade log  = new LogFacade();
 
-      log.messageCorrect();
+      LogFacade.messageCorrect(LogLevel.INFO, "Java rządzi i dzieli!");
 
 
 

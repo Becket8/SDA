@@ -3,20 +3,22 @@ package pl.patterns.chor;
 /**
  * Created by RENT on 2017-09-07.
  */
-public class LogFacade {
-    private Logger info;
-    private Logger debug;
-    private Logger error;
+public  class LogFacade {
+    private static Logger info = new InfoLogger();
+    private static Logger debug = new DebugLogger();
+    private static Logger error = new ErrorLogger();
 
-    public LogFacade() {
-        info = new InfoLogger();
-        debug = new DebugLogger();
-        error = new ErrorLogger();
+    static {
+        info.setNextLogger(debug);
+        debug.setNextLogger(error);
     }
 
-    public void messageCorrect() {
-        info.logMessage(LogLevel.INFO, " chor rocks!!!");
-        debug.logMessage(LogLevel.DEBUG, " chor rocks2!!!");
-        error.logMessage(LogLevel.ERROR, " chor rocks3!!!");
+    public LogFacade() {
+
+    }
+
+    public static void messageCorrect(LogLevel level, String message) {
+        info.logMessage(level, message);
+
     }
 }
