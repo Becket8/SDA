@@ -1,4 +1,4 @@
-package pl.patterns.chor;
+package pl.patterns.chor.logger;
 
 /**
  * Created by RENT on 2017-09-07.
@@ -11,6 +11,6 @@ public class DebugLogger extends Logger {
 
     @Override
     protected void write(String message) {
-        System.out.println("Logger 2 poziomu " + message);
+        System.out.println("logger 2 poziomu " + message);
     }
 }

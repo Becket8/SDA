@@ -1,4 +1,4 @@
-package pl.patterns.chor;
+package pl.patterns.chor.logger;
 
 //Enum czyli znnam dokladnie ilosc wystapien
 

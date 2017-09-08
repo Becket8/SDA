@@ -1,4 +1,4 @@
-package pl.patterns.chor;
+package pl.patterns.chor.logger;
 
 
 public class InfoLogger extends Logger {
@@ -8,7 +8,7 @@ public class InfoLogger extends Logger {
     }
     @Override
     protected void write(String message) {
-        System.out.println("Logger 1 poziomu " + message);
+        System.out.println("logger 1 poziomu " + message);
 
     }
 }

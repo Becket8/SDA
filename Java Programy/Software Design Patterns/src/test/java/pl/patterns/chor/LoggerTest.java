@@ -1,8 +1,8 @@
 package pl.patterns.chor;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
+import pl.patterns.chor.logger.LogFacade;
+import pl.patterns.chor.logger.LogLevel;
 
 /**
  * Created by RENT on 2017-09-07.

@@ -1,4 +1,4 @@
-package pl.patterns.chor;
+package pl.patterns.chor.logger;
 
 /**
  * Created by RENT on 2017-09-07.
