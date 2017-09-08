@@ -14,16 +14,18 @@ public abstract class Payment {
 
     protected abstract Double getMaxAmount();
 
-
-    private void processPayment(Payment payment) {
+    public void setNextPayment(Payment nextPayment){
         this.nextPayment = nextPayment;
     }
 
+
+
+
     public boolean handlePayment(Double amount) {
         if (amount < getMaxAmount()) {
-            return pay(amount);
+            return handlePayment(amount);
         } else if (nextPayment != null) {
-            return nextPayment.pay(amount);
+            return nextPayment.handlePayment(amount);
         }
             return false;
 

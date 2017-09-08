@@ -11,8 +11,8 @@ public class PaymentTest {
     @Test
     public void test(){
         Account ac = new Account();
-        Payment pay = new TokenPayment(ac);
-        pay.pay(2000.0);
+        Payment payment = new TokenPayment(ac);
+        payment.pay(50.0);
 
     }
 
