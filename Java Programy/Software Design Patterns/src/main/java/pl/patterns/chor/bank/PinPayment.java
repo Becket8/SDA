@@ -23,6 +23,6 @@ public class PinPayment extends Payment {
         System.out.println("PIN: ");
         Scanner sc = new Scanner(System.in);
         int pinFromUser = sc.nextInt();
-        return account.pay(amount,pinFromUser);
+        return account.pay(amount, pinFromUser);
     }
 }
