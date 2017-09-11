@@ -61,16 +61,9 @@ public class ForEachPlayground {
                 .filter(employee -> employee.getSalary() > salary)
                 .sorted(Comparator.comparing(Employee::getName))
                 .collect(Collectors.toList());
+    return result;
     }
 
-    public static void main(String[] args) {
-
-        ForEachPlayground zz = new ForEachPlayground();
-
-        zz.sumAll();
-
-
-    }
 
 
 }
