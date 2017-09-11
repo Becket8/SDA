@@ -1,7 +1,7 @@
 
-wsquid:S00116"URename this field "MAX_AMOUNT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Š€úùÿÿÿÿ8şß¬”æ+
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ıİÚâ8“Ÿá”æ+
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ºÉÉŒ8İÈÃ”æ+
-Bsquid:S1170"!Make this final field static too.(‡Š€úùÿÿÿÿ8şß¬”æ+
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ºÉÉŒ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ıİÚâ
+;squid:S1170"!Make this final field static too.(‡Š€úùÿÿÿÿ
+psquid:S00116"URename this field "MAX_AMOUNT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Š€úùÿÿÿÿ

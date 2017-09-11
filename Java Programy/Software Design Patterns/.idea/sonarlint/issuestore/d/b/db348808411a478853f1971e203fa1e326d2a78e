@@ -1,11 +1,11 @@
 
-Qsquid:S2209"5Change this instance-reference to a static reference.(Ï´±’8ºÆ•æ+
-S
-squid:S106"9Replace this use of System.out or System.err by a logger.(õŠí8şÕş”æ+
-|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(µƒ¡Şùÿÿÿÿ8¶¥•æ+
-tsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(µƒ¡Şùÿÿÿÿ8¶¥•æ+
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(´¤€Ãúÿÿÿÿ8¨‘ÿ”æ+
-osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ˆ£š8¶¥•æ+
-Qsquid:S2209"5Change this instance-reference to a static reference.(¼µÑ›8¿¨•æ+
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ˆ£š8¶¥•æ+
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(µƒ¡Şùÿÿÿÿ
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ˆ£š
+L
+squid:S106"9Replace this use of System.out or System.err by a logger.(õŠí
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(´¤€Ãúÿÿÿÿ
+Jsquid:S2209"5Change this instance-reference to a static reference.(Ï´±’
+Jsquid:S2209"5Change this instance-reference to a static reference.(¼µÑ›
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(µƒ¡Şùÿÿÿÿ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ˆ£š

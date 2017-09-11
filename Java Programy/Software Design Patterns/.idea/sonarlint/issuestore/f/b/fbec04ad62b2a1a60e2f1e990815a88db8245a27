@@ -1,5 +1,5 @@
 
-Bsquid:S1170"!Make this final field static too.(¥‰¬ıÿÿÿÿ8ì›³“æ+
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ºÉÉŒ8şÈ¸“æ+
-xsquid:S00116"VRename this field "MAX_PAYMENT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥‰¬ıÿÿÿÿ8ì›³“æ+
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ºÉÉŒ
+;squid:S1170"!Make this final field static too.(¥‰¬ıÿÿÿÿ
+qsquid:S00116"VRename this field "MAX_PAYMENT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥‰¬ıÿÿÿÿ
