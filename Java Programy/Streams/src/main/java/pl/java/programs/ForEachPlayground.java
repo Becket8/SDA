@@ -16,6 +16,7 @@ public class ForEachPlayground {
         Employee ono = new Employee("ono", "ono", 20, 1400.0);
         Employee my = new Employee("my", "my", 22, 5000.0);
 
+
         emp.add(ja);
         emp.add(ty);
         emp.add(on);
@@ -63,6 +64,8 @@ public class ForEachPlayground {
                 .collect(Collectors.toList());
     return result;
     }
+
+
 
 
 

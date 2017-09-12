@@ -18,6 +18,14 @@ public class Employee implements Serializable {
     private String surname;
     private int age;
     private double salary;
+    private Address address;
+
+    public Employee(String name, String surname, int age, double salary) {
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        this.salary = salary;
 
 
+    }
 }
