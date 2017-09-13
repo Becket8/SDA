@@ -20,7 +20,7 @@ public class ForEachPlaygroundTest {
 
     @Test
 
-    public void EmpoloyeeStreet() throws Exception {;
+    public void EmpoloyeeStreet() throws Exception {
 
         List<Employee> employees = new ArrayList<>();
 
@@ -59,9 +59,9 @@ public class ForEachPlaygroundTest {
 
         employees.add(jacek);
         employees.add(wojtek);
-        Map<String,List<Employee>> group = employees
+        Map<Address,List<Employee>> group = employees
                 .stream()
-                .collect(Collectors.groupingBy(Employee::getSalary));
+                .collect(Collectors.groupingBy(Employee::getAddress));
         System.out.println(group);
     }
 

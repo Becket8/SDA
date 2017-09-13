@@ -1,0 +1,9 @@
+
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(¼¡¨ò
+wsquid:S1488"]Immediately return this expression instead of assigning it to the temporary variable "count".(øÖ ‰ùÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(Åšöîüÿÿÿÿ
+ssquid:S1488"^Immediately return this expression instead of assigning it to the temporary variable "result".(‰Ùë®
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(²…¶îýÿÿÿÿ
