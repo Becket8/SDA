@@ -5,15 +5,12 @@ package pl.threads.programs;
  */
 public class Counter {
     private long count = 0;
-    boolean flaga = true;
 
-    public Counter(long count) {
-        this.count = count;
+    public long getCount() {
+        return count;
     }
 
-    public void add(){
-        do {
-            count++;
-        }while(flaga);
+    public synchronized void add(int value){
+        this.count+=value;
     }
 }
