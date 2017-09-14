@@ -6,8 +6,8 @@ import java.util.Random;
  * Created by RENT on 2017-09-13.
  */
 public class Zad3 {
-    public static void main(String[] args) {
-        int ARRAY_SIZE = 10000;
+    public static void main(String[] args) throws InterruptedException {
+        int ARRAY_SIZE = 1000;
         double[] arr = new double[ARRAY_SIZE];
         Random random = new Random(100);
         for(int i = 0; i<arr.length;i++){
