@@ -18,6 +18,15 @@ public class Producer implements Runnable {
 
     @Override
     public void run() {
+        while (true){
+            try {
+            putMessage();
+            messageCount++;
+                Thread.sleep(DEFAULT_DELAY);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
 
     }
 
@@ -29,11 +38,13 @@ public class Producer implements Runnable {
         while (messages.size() >= MAX_QUEUE) {
             Thread.sleep(100);
         }
+        System.out.println("Adding new message to queue");
         messages.add(new BigInteger(130, secureRandom).toString());
     }
 
     public String getMessage() throws InterruptedException {
         while (messages.isEmpty()) {
+            System.out.println("Queue is empty... Waiting for more");
             Thread.sleep(100);
         }
         return messages.poll();
