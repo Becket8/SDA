@@ -3,7 +3,7 @@ package pl.threads.programs;
 /**
  * Created by RENT on 2017-09-13.
  */
-public class Zad1 {
+public class TaskOne {
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Początek");

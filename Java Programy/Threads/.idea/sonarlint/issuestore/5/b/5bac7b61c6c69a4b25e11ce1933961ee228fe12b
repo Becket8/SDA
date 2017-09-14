@@ -1,9 +1,0 @@
-
-Ysquid:UselessImportCheck"0Remove this unused import 'lombok.Synchronized'.(ÛÏáù8í ¶äç+
-Xsquid:UselessImportCheck"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8ÙÕöãç+
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øô¤Ë8é…üãç+
-Ysquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÙÕöãç+
-Ysquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÙÕöãç+
-usquid:S00116"XRename this field "THREADS_COUNT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò Ò•8·Éûãç+
-[squid:UselessImportCheck"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8ìóóãç+
-Hsquid:S1602",Remove useless curly braces around statement(™¼¦ñ8Õ·Ääç+

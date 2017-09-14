@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Created by RENT on 2017-09-13.
  */
-public class Zad3 {
+public class TaskThree {
     public static void main(String[] args) throws InterruptedException {
         int ARRAY_SIZE = 1000;
         double[] arr = new double[ARRAY_SIZE];

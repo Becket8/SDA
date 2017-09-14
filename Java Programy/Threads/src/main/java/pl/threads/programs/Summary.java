@@ -21,6 +21,7 @@ public class Summary {
         this.THREADS_COUNT = THREADS_COUNT;
         this.array = array;
         this.threads = new Thread[THREADS_COUNT];
+        
     }
 
     public double startCalculations() throws InterruptedException {
