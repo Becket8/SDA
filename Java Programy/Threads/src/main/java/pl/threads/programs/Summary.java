@@ -1,11 +1,5 @@
 package pl.threads.programs;
 
-import lombok.Synchronized;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
 
 /**
  * Created by RENT on 2017-09-13.
@@ -21,7 +15,7 @@ public class Summary {
         this.THREADS_COUNT = THREADS_COUNT;
         this.array = array;
         this.threads = new Thread[THREADS_COUNT];
-        
+
     }
 
     public double startCalculations() throws InterruptedException {

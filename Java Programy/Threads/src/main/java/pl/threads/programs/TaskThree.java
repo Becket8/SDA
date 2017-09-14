@@ -6,17 +6,34 @@ import java.util.Random;
  * Created by RENT on 2017-09-13.
  */
 public class TaskThree {
+
+    public static double sumArray(double[] arr){
+        double sum = 0;
+        for(double e:arr){
+            sum+= e;
+        }
+   return sum;
+    }
     public static void main(String[] args) throws InterruptedException {
-        int ARRAY_SIZE = 1000;
+        int ARRAY_SIZE = 1000000;
         double[] arr = new double[ARRAY_SIZE];
-        Random random = new Random(100);
+        Random random = new Random();
         for(int i = 0; i<arr.length;i++){
-            arr[i] = random.nextInt();
+            arr[i] = random.nextDouble();
 
         }
 
-        Summary sum = new Summary(arr, 8);
+        Summary sum = new Summary(arr, 10000);
+        long l = System.currentTimeMillis();
         double v = sum.startCalculations();
-        System.out.println("Wynik sumowania: " + v);
+        long after = System.currentTimeMillis();
+        System.out.println("Czas operacji na watkach: " + (after-l));
+        System.out.println("Czas operacji na watkach: " + v);
+
+        long singleStart = System.currentTimeMillis();
+        double singleResult = sumArray(arr);
+        long singleAfter = System.currentTimeMillis();
+        System.out.println("Czas operacji na 1 watku: " + (singleStart - singleAfter));
+        System.out.println("Czas operacji na 1 watku: " + singleResult);
     }
 }
