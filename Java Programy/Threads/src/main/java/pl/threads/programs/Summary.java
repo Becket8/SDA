@@ -28,6 +28,7 @@ public class Summary {
             threads[i].start();
             threads[i].join();
         }
+
     return sum;
     }
 
