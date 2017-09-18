@@ -1,23 +1,29 @@
 package pl.sda.poznan.phone;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
+
+
+@Getter
+@Setter
+@NoArgsConstructor
+@Slf4j
 public class Contact {
     private String name;
-    private String phoneNumber;
+    private String number;
 
-    public Contact(String name, String phoneNumber) {
+    public Contact(String name, String number) {
         this.name = name;
-        this.phoneNumber = phoneNumber;
+        this.number = number;
     }
 
-    public String getName() {
-        return name;
-    }
+    public static Contact createContact(String name, String number) {
+        return new Contact(name, number);
 
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
 
-    public static Contact createContact(String name, String phoneNumber) {
-        return new Contact(name, phoneNumber);
+
     }
 }
+

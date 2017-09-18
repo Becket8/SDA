@@ -1,73 +1,71 @@
 package pl.sda.poznan.phone;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayList;
 
+@Slf4j
 public class MobilePhone {
     private String myNumber;
     private ArrayList<Contact> myContacts;
 
-    public MobilePhone(){
-        this.myContacts = new ArrayList<>();
-    }
 
     public MobilePhone(String myNumber) {
         this.myNumber = myNumber;
-        this.myContacts = new ArrayList<Contact>();
+        this.myContacts = new ArrayList<>();
+    }
+
+    public Contact addToList(Contact contact) {
+        myContacts.add(contact);
+        return contact;
+    }
+
+    public void RemoveOldContact(Contact oldContact) {
+        myContacts.remove(oldContact);
+
     }
 
     public boolean addNewContact(Contact contact) {
-        if (findContact(contact.getName()) >= 0) {
-            System.out.println("Contact is already on file");
+        if (myContacts.indexOf(contact) >= 0) {
+            log.info("Contact already exists");
             return false;
         }
-
-        myContacts.add(contact);
         return true;
+    }
 
+    private boolean hasContact(Contact contact) {
+        return myContacts.indexOf(contact) >= 0;
     }
 
     public boolean updateContact(Contact oldContact, Contact newContact) {
-        int foundPosition = findContact(oldContact);
-        if (foundPosition < 0) {
-            System.out.println(oldContact.getName() + ", was not found.");
-            return false;
+        if (hasContact(oldContact)) {
+            int indexOfOldContact = myContacts.indexOf(oldContact);
+            myContacts.add(indexOfOldContact, newContact);
+            return true;
         }
+        log.info("Nie dodano kontaktu");
+        return false;
 
-        this.myContacts.set(foundPosition, newContact);
-        System.out.println(oldContact.getName() + ", was replaced with " + newContact.getName());
-        return true;
     }
 
-    public boolean removeContact(Contact contact) {
-        int foundPosition = findContact(contact);
-        if (foundPosition < 0) {
-            System.out.println(contact.getName() + ", was not found.");
-            return false;
-        }
-        this.myContacts.remove(foundPosition);
-        System.out.println(contact.getName() + ", was deleted.");
-        return true;
-    }
-
-    private int findContact(Contact contact) {
-        return this.myContacts.indexOf(contact);
-    }
-
-    private int findContact(String contactName) {
+    public int findContact(String name) {
         for (int i = 0; i < this.myContacts.size(); i++) {
             Contact contact = this.myContacts.get(i);
-            if (contact.getName().equals(contactName)) {
+            if (contact.getName().equals(name)) {
                 return i;
             }
         }
         return -1;
     }
 
-    public String queryContact(Contact contact) {
-        if (findContact(contact) >= 0) {
-            return contact.getName();
+    public void showAllContacts() {
+
+        System.out.println("Contact list");
+        for (int i = 0; i < this.myContacts.size(); i++) {
+            System.out.println((i + 1) + "." +
+                    this.myContacts.get(i).getName() + " -> " +
+                    this.myContacts.get(i).getNumber());
         }
-        return null;
     }
 
     public Contact queryContact(String name) {
@@ -79,15 +77,18 @@ public class MobilePhone {
         return null;
     }
 
-    public void printContacts() {
-        System.out.println("Contact List");
-        for (int i = 0; i < this.myContacts.size(); i++) {
-            System.out.println((i + 1) + "." +
-                    this.myContacts.get(i).getName() + " -> " +
-                    this.myContacts.get(i).getPhoneNumber());
+    public boolean removeContact(Contact contact) {
+        int position = myContacts.indexOf(contact);
+        if (position < 0) {
+            System.out.println("Nie znaleziono kontaktu");
+            return false;
+        } else {
+            myContacts.remove(position);
+            System.out.println("Usunięto kontakt");
+            return true;
         }
 
     }
 
-
 }
+
