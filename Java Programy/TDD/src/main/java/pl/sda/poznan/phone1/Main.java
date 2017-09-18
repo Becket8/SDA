@@ -11,9 +11,10 @@ public class Main {
     public static void main(String[] Args) {
         boolean exit = false;
         do {
+            System.out.println();
             System.out.println("Wybierz funkcje: " + "\n0. Wyjście z programu " + "\n1. Pokaż wszystkie kontakty "
                     + "\n2. Dodaj nowy kontakt " + "\n3. Zmień istniejący kontakt "
-                    + "\n4. Usuń kontakt " + "\n5. Znajdź kontakt ");
+                    + "\n4. Usuń kontakt " + "\n5. Sprawdz czy kontakt istnieje ");
             Scanner scanner = new Scanner(System.in);
             int opcja = scanner.nextInt();
 
@@ -40,6 +41,7 @@ public class Main {
                     break;
                 }
                 case 5: {
+                    queryContact();
                     break;
                 }
             }
@@ -53,7 +55,7 @@ public class Main {
         System.out.println("Podaj imię: ");
         String name = scanner.next();
         System.out.println("Podaj numer: ");
-        Double number = scanner.nextDouble();
+        String number = scanner.nextLine();
         Contact newContact = Contact.createContact(name, number);
         if (mobilePhone.addNewContact(newContact)) {
             System.out.println("Dodano kontakt: " + name + " Numer: " + number);
@@ -74,7 +76,7 @@ public class Main {
         System.out.println("Wpisz nowa nazwe kontaktu: ");
         String newName = scanner.nextLine();
         System.out.println("Wpisz nowy numer kontaktu");
-        double newNumber = scanner.nextDouble();
+        String newNumber = scanner.nextLine();
         Contact newContact = Contact.createContact(newName, newNumber);
         if (mobilePhone.updateContact(oldContact, newContact)) {
             System.out.println("Zmieniono dane kontaktu na nowe");
@@ -98,12 +100,18 @@ public class Main {
             System.out.println("Usuwanie nie powiodlo sie");
     }
 
-    private static void findContact(){
+    private static void queryContact() {
         System.out.println("Podaj nazwe kontaktu: ");
         String name = scanner.nextLine();
         Contact contact = mobilePhone.queryContact(name);
-        if()
-    }
+        if (contact == null) {
 
+            System.out.println("Nie ma takiego kontaktu");
+        } else
+            System.out.println("Kontakt " + contact + " istnieje");
+
+
+    }
 }
+
 

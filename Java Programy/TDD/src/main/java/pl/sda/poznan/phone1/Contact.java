@@ -12,14 +12,14 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class Contact {
     private String name;
-    private double number;
+    private String number;
 
-    public Contact(String name, double number) {
+    public Contact(String name, String number) {
         this.name = name;
         this.number = number;
     }
 
-    public static Contact createContact(String name, double number) {
+    public static Contact createContact(String name, String number) {
         return new Contact(name, number);
 
 

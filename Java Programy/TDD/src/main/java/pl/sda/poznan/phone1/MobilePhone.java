@@ -66,17 +66,21 @@ public class MobilePhone {
         return null;
     }
 
-public boolean removeContact(Contact contact){
+    public boolean removeContact(Contact contact) {
         int position = myContacts.indexOf(contact);
-        if (position < 0){
+        if (position < 0) {
             System.out.println("Nie znaleziono kontaktu");
             return false;
-        }else{
+        } else {
             myContacts.remove(position);
             System.out.println("Usunięto kontakt");
             return true;
         }
 
+    }
+
+    private int findMyContact(Contact contact) {
+        return this.myContacts.indexOf(contact);
     }
 }
 
