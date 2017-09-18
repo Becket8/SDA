@@ -10,8 +10,6 @@ public abstract class Payment {
     protected final Account account;
     private Payment nextPayment;
 
-
-
     protected abstract Double getMaxAmount();
 
     public void setNextPayment(Payment nextPayment){
@@ -22,8 +20,8 @@ public abstract class Payment {
 
 
     public boolean handlePayment(Double amount) {
-        if (amount < getMaxAmount()) {
-            return handlePayment(amount);
+        if (amount > getMaxAmount()) {
+            return pay(amount);
         } else if (nextPayment != null) {
             return nextPayment.handlePayment(amount);
         }

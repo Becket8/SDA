@@ -10,7 +10,7 @@ public class test {
 //TODO
             payment.setNextPayment(payment);
 
-            payment.handlePayment(300d);
+            payment.handlePayment(50d);
 
     }
 }
