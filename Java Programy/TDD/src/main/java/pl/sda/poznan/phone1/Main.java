@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class Main {
     private static MobilePhone mobilePhone = new MobilePhone("345-301-221");
     private static Scanner scanner = new Scanner(System.in);
-    private List<Contact> contacts = new ArrayList<>();
 
     public static void main(String[] Args) {
         boolean exit = false;
@@ -33,6 +32,7 @@ public class Main {
                     break;
                 }
                 case 3: {
+                    updateContact();
                     break;
                 }
                 case 4: {
@@ -63,8 +63,27 @@ public class Main {
     }
 
     private static void updateContact(){
-        if(mobilePhone.updateContact())
-        System.out.println("P");
+        System.out.println("Wpisz nazwe kontaktu:");
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        Contact oldContact = mobilePhone.queryContact(name);
+        if(oldContact == null){
+            System.out.println("Kontaktu nie znaleziono");
+            return;
+        }
+        System.out.println("Wpisz nowa nazwe kontaktu: ");
+        String newName = sc.nextLine();
+        System.out.println("Wpisz nowy numer kontaktu");
+        double newNumber = sc.nextDouble();
+        Contact newContact = Contact.createContact(newName,newNumber);
+        if(mobilePhone.updateContact(oldContact,newContact)){
+        System.out.println("Zmieniono dane kontaktu na nowe");
+        }else{
+            System.out.println("Nie mozna uaktualnic kontaktu");
+        }
+    }
+    private static void deleteContact(){
+        System.out.println("Podaj nazwe kontaktu jaki chcesz usunac: ");
     }
 
 }

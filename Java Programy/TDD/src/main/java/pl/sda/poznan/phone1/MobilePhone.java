@@ -37,30 +37,35 @@ public class MobilePhone {
 
     }
 
-    public Contact findContact(String name) {
-        for (Contact c : myContacts) {
-            if (c.getName().equals(name)) {
-                return c;
+    public int findContact(String name) {
+        for (int i = 0; i < this.myContacts.size(); i++) {
+            Contact contact = this.myContacts.get(i);
+            if (contact.getName().equals(name)) {
+                return i;
             }
         }
-        return null;
+        return -1;
     }
 
-    public  void showAllContacts() {
+    public void showAllContacts() {
+
         System.out.println("Contact list");
-        for (int i = 0; i < this.myContacts.size(); i++){
+        for (int i = 0; i < this.myContacts.size(); i++) {
             System.out.println((i + 1) + "." +
                     this.myContacts.get(i).getName() + " -> " +
                     this.myContacts.get(i).getNumber());
         }
     }
+
     public Contact queryContact(String name) {
-        Contact position = findContact(name);
-        if (position != null) {
-            return this.myContacts.get();
+        int position = findContact(name);
+        if (position >= 0) {
+            return this.myContacts.get(position);
         }
 
         return null;
     }
+
+
 }
 
