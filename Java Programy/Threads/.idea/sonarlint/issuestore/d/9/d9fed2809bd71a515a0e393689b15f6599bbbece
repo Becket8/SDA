@@ -1,0 +1,12 @@
+
+<squid:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ
+Fsquid:S1068"1Remove this unused "DEFAULT_DELAY" private field.(º×Ý
+=squid:S1068"(Remove this unused "name" private field.(Ú§×œ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(¡„º¹ÿÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(É²ú£ûÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ã„º¶
+[squid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(…ò°”
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Š“ûíûÿÿÿÿ
