@@ -11,8 +11,8 @@
 <jsp:include page="common/nav.jsp"/>
 
 <div class="container">
-
     <div class="row" style="padding-top: 100px">
+        <%--@elvariable id="task" type="com"--%>
         <div class="col-md-12">
             <h1>
                 <c:choose>
@@ -25,7 +25,8 @@
                 </c:choose>
             </h1>
             <form:form method="POST" action="/add" modelAttribute="task">
-                <table>
+            <form:hidden path="id"/>
+                    <table>
                     <tr>
                         <td><form:label path="name">Name</form:label></td>
                         <td><form:input path="name"/></td>

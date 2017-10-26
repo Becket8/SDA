@@ -55,7 +55,7 @@ public class TaskController {
     }
 
 
-    @RequestMapping("/edit")
+    @RequestMapping(value = "/edit" )
     public ModelAndView editTask(@RequestParam("id")String id, ModelAndView modelAndView){
         Task task = taskFacade.findTaskById(Long.parseLong(id));
         modelAndView.addObject("task",task);
