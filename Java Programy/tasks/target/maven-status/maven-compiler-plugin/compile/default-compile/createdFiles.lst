@@ -1,0 +1,8 @@
+com\sda\demo\tasks\TasksApplication.class
+com\sda\demo\tasks\config\WebMVCConfig.class
+com\sda\demo\tasks\facade\TaskFacade.class
+com\sda\demo\tasks\repository\TaskRepository.class
+com\sda\demo\tasks\model\Task.class
+com\sda\demo\tasks\utils\DateUtils.class
+com\sda\demo\tasks\controller\TaskController.class
+com\sda\demo\tasks\facade\TaskGenerator.class
