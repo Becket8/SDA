@@ -24,7 +24,7 @@ public class HomeController {
     @Autowired
     private SomeService myService;
 
-    @Qualifier("smallNumbersGenerator")
+   // @Qualifier("smallNumbersGenerator")
     @Autowired
     private RandomNumbersGeneratorService randomNumbersGeneratorService;
 
@@ -53,25 +53,5 @@ public class HomeController {
         return new ModelAndView("home");
     }
 
-    @GetMapping("/calc/add")
-    public ModelAndView add(){
-        System.out.println(calcService.sum(randomNumbersGeneratorService.generateNumber(), randomNumbersGeneratorService.generateNumber()));
 
-        return new ModelAndView("home");
-    }
-    @GetMapping("/calc/multiply")
-    public ModelAndView multiply(){
-        System.out.println(calcService.multiply(randomNumbersGeneratorService.generateNumber(), randomNumbersGeneratorService.generateNumber()));
-
-        return new ModelAndView("home");
-    }
-    @GetMapping("/calc/counter")
-    public ModelAndView counter(){
-        calcService.getCounter().entrySet().forEach((entry) ->{
-            System.out.println( entry.getKey() + entry.getValue());
-        });
-
-
-        return new ModelAndView("home");
-    }
 }
