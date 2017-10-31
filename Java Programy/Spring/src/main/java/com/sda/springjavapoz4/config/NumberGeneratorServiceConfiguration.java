@@ -19,4 +19,5 @@ public class NumberGeneratorServiceConfiguration {
         randomNumbersGeneratorService.setOffset(1000);
         return randomNumbersGeneratorService;
     }
+
 }

@@ -16,9 +16,3 @@ public class MySpringApplication {
 	}
 }
 
-//Chcemy efektywnie dostać 2 beany - smallNumbersGenerator i bigNumbersGenerator
-//pierwszy ma zwracać liczby z zakresu 0-50
-//drugi z zakresu 1000-10000
-//Wstrzykujemy je do controllerow, pierwszy do UsersController drugi do HomeController
-//Używamy ich odpowiednio w metodach @GetMapping
-//Używamy Qualifier

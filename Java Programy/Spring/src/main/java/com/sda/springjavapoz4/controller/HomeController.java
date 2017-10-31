@@ -1,5 +1,6 @@
 package com.sda.springjavapoz4.controller;
 
+import com.sda.springjavapoz4.service.CalcService;
 import com.sda.springjavapoz4.service.RandomNumbersGeneratorService;
 import com.sda.springjavapoz4.service.SomeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,8 +9,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Map;
+
 @Controller
 public class HomeController {
+
+    @Autowired
+    private CalcService calcService;
 
     @Autowired
     private SomeService someService;
@@ -21,6 +27,8 @@ public class HomeController {
     @Qualifier("smallNumbersGenerator")
     @Autowired
     private RandomNumbersGeneratorService randomNumbersGeneratorService;
+
+
 
     public HomeController() {
 //        this.someService = new SomeService();
@@ -42,6 +50,28 @@ public class HomeController {
     public ModelAndView about() {
         System.out.println(randomNumbersGeneratorService.generateNumber());
         myService.someAction();
+        return new ModelAndView("home");
+    }
+
+    @GetMapping("/calc/add")
+    public ModelAndView add(){
+        System.out.println(calcService.sum(randomNumbersGeneratorService.generateNumber(), randomNumbersGeneratorService.generateNumber()));
+
+        return new ModelAndView("home");
+    }
+    @GetMapping("/calc/multiply")
+    public ModelAndView multiply(){
+        System.out.println(calcService.multiply(randomNumbersGeneratorService.generateNumber(), randomNumbersGeneratorService.generateNumber()));
+
+        return new ModelAndView("home");
+    }
+    @GetMapping("/calc/counter")
+    public ModelAndView counter(){
+        calcService.getCounter().entrySet().forEach((entry) ->{
+            System.out.println( entry.getKey() + entry.getValue());
+        });
+
+
         return new ModelAndView("home");
     }
 }
