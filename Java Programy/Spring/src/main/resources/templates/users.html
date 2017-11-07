@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<div class="user">
+    <h1 th:text="${surname}"></h1>
+</div>
+<table>
+    <th:block th:each = "user: ${listOfUsers}">
+        <tr>
+            <td th:text="${user.firstName}"></td>
+            <td th:text="${user.surname}"></td>
+            <td th:text="${user.phoneNumber}"></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

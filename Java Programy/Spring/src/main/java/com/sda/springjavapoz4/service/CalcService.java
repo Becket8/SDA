@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-//@Component
+@Component
 public class CalcService {
 
     private Map<String, Integer> counter;
