@@ -21,10 +21,10 @@ public class UsersController {
         userService.addUser(user);
         return "redirect:/users";
     }
-    //Jezeli Post leci z czegos innego niz z pliku w  formacie xhtml, to
-    // zmieniamy ModelAttribute na RequestParam i dodajemy consumes
+    //Jezeli Post leci z czegos innego niz z pliku w  formacie x-www, to
+    // zmieniamy ModelAttribute na RequestBody i dodajemy consumes
     @PostMapping(consumes = "application/json")
-    public String saveUserJson(@RequestParam User user){
+    public String saveUserJson(@RequestBody User user){
         userService.addUser(user);
         return "redirect:/users";
     }
