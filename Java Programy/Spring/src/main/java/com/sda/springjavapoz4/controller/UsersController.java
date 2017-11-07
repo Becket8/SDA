@@ -18,7 +18,7 @@ public class UsersController {
 //ModelAttrubute podczas posta, przechwyci odpowiednie pola, ktore przyszly i dopasuje je do obieku, jesli sa
     @PostMapping
     public String saveUser(@ModelAttribute User user){
-        System.out.println(user);
+        userService.addUser(user);
         return "redirect:/users";
     }
 
