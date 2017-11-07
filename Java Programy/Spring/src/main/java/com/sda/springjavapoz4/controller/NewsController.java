@@ -21,6 +21,7 @@ public class NewsController {
         news.addObject("allNews", newsService.getAllService());
         return news;
     }
+    //w mappingu i przy pathvariable musi byc ta sama nazwa
     @GetMapping("{id}")
     public ModelAndView getNews(@PathVariable("id") int id){
         ModelAndView news = new ModelAndView("News");
