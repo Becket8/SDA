@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li th:each="news,iter : ${allNews}" style=" list-style-type : none; border: 1px solid black; margin: 20px 0">
+        <a th:href="'/news/' + ${iter.index}" href="#" style="text-decoration: none">
+
+            <h1 th:text="${news.title}">News</h1>
+            <h6 th:text="${news.author.firstName} + ' ' + ${news.author.surname} + ' - ' + ${news.date}">Jan
+                Kowalski</h6>
+            <p th:text="${news.abbreviateDescription}">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Ab adipisci aliquid architecto
+                at atque culpa dolor dolore ducimus earum et excepturi
+                explicabo harum ipsa, minus molestiae mollitia necessitatibus
+                nobis nostrum, odit officiis perferendis quis sed
+                similique sunt tempora ullam voluptates.
+                Accusantium aut ex, fuga fugit iste maiores nemo repellat sed.
+            </p>
+        </a>
+    </li>
+</ul>
+</body>
+</html>

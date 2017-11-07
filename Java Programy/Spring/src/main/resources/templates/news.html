@@ -5,8 +5,6 @@
     <title>Title</title>
 </head>
 <body>
-<ul>
-    <li th:each="news : ${news}" style=" list-style-type : none; border: 1px solid black; margin: 20px 0">
 
         <h1 th:text="${news.title}">News</h1>
         <h6 th:text="${news.author.firstName} + ' ' + ${news.author.surname} + ' - ' + ${news.date}">Jan Kowalski</h6>
@@ -18,7 +16,5 @@
             similique sunt tempora ullam voluptates.
             Accusantium aut ex, fuga fugit iste maiores nemo repellat sed.
         </p>
-    </li>
-</ul>
 </body>
 </html>

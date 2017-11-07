@@ -17,14 +17,14 @@ public class NewsController {
     @GetMapping
     public ModelAndView getAllNews(){
 
-        ModelAndView news = new ModelAndView("news");
-        news.addObject("news", newsService.getAllService());
+        ModelAndView news = new ModelAndView("allNews");
+        news.addObject("allNews", newsService.getAllService());
         return news;
     }
     @GetMapping("{id}")
     public ModelAndView getNews(@PathVariable("id") int id){
-        ModelAndView news = new ModelAndView("news");
-        news.addObject("id",newsService.getNews(id));
+        ModelAndView news = new ModelAndView("News");
+        news.addObject("news",newsService.getNews(id));
         return news;
 
     }

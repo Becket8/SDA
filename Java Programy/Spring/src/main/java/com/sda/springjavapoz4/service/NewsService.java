@@ -1,6 +1,6 @@
 package com.sda.springjavapoz4.service;
 
-import com.sda.springjavapoz4.model.User;
+import com.sda.springjavapoz4.model.News;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -35,7 +35,19 @@ public class NewsService {
 }
 
     public News newNews() {
-        News news = new News(1L, "gdsggs", "sffasaa", LocalDate.now(), "path1", "path2", userService.getExampleUser());
+        News news = new News(1L,
+                "gdsggs",
+                "Lorem ipsum dolor sit amet,\n" +
+                "            consectetur adipisicing elit. Ab adipisci aliquid architecto\n" +
+                "            at atque culpa dolor dolore ducimus earum et excepturi\n" +
+                "            explicabo harum ipsa, minus molestiae mollitia necessitatibus\n" +
+                "            nobis nostrum, odit officiis perferendis quis sed\n" +
+                "            similique sunt tempora ullam voluptates.\n" +
+                "            Accusantium aut ex, fuga fugit iste maiores nemo repellat sed.",
+                LocalDate.now(),
+                "path1",
+                "path2",
+                userService.getExampleUser());
         return news;
 
     }
