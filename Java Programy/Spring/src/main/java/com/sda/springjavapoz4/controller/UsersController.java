@@ -4,10 +4,7 @@ import com.sda.springjavapoz4.model.User;
 import com.sda.springjavapoz4.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.jws.WebParam;
@@ -18,6 +15,19 @@ public class UsersController {
 
     @Autowired
     private UserService userService;
+//ModelAttrubute podczas posta, przechwyci odpowiednie pola, ktore przyszly i dopasuje je do obieku, jesli sa
+    @PostMapping
+    public String saveUser(@ModelAttribute User user){
+        System.out.println(user);
+        return "redirect:/users";
+    }
+
+    @GetMapping
+    public ModelAndView getAllUsers(){
+        ModelAndView modelAndView = new ModelAndView("users");
+        modelAndView.addObject("users",userService.getAllUsers());
+    return modelAndView;
+    }
 
     @GetMapping("/example")
     public ModelAndView Users() {

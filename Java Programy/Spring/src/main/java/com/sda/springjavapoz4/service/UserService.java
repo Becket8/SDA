@@ -49,9 +49,16 @@ public class UserService {
         User user = new User(1L, firstNameGenerator.getRandomFirstName(), lastNameGenerator.getRandomLastName(), "39333423");
         return user;
     }
+
     public List<User> getUsersByFirstName(String firstName) {
         List<User> userList = users.stream()
                 .filter(user -> user.getFirstName().equals(firstName)).collect(Collectors.toList());
         return userList;
+    }
+
+    public List<User> getAllUsers() {
+
+        return users;
+
     }
 }
