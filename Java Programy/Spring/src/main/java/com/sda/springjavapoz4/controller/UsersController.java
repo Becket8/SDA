@@ -21,6 +21,13 @@ public class UsersController {
         userService.addUser(user);
         return "redirect:/users";
     }
+    //Jezeli Post leci z czegos innego niz z pliku w  formacie xhtml, to
+    // zmieniamy ModelAttribute na RequestParam i dodajemy consumes
+    @PostMapping(consumes = "application/json")
+    public String saveUserJson(@RequestParam User user){
+        userService.addUser(user);
+        return "redirect:/users";
+    }
 
     @GetMapping
     public ModelAndView getAllUsers(){
@@ -31,7 +38,6 @@ public class UsersController {
 
     @GetMapping("/example")
     public ModelAndView Users() {
-
         System.out.println(userService.getExampleUser());
         return new ModelAndView("user");
     }

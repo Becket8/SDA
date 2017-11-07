@@ -38,7 +38,7 @@ public class UserService {
         users.add(getExampleUser());
         users.add(getExampleUser());
         users.add(getExampleUser());
-
+        users.forEach(user -> System.out.println(user));
     }
 
     public User getUser(int id) {
