@@ -1,6 +1,7 @@
 package com.sda.springjavapoz4.service;
 
 import com.sda.springjavapoz4.model.User;
+import com.sda.springjavapoz4.repository.UserRepository;
 import com.sda.springjavapoz4.service.generator.FirstNameGenerator;
 import com.sda.springjavapoz4.service.generator.LastNameGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,16 +13,19 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 /**
  * Created by RENT on 2017-10-30.
  */
 @Component
 public class UserService {
-    private List<User> users;
+
+    @Autowired
+    private UserRepository userRepository;
 
     public UserService() {
-        this.users = new ArrayList<>();
+
 
     }
 
@@ -32,38 +36,40 @@ public class UserService {
 
     @PostConstruct
     public void init() {
-        users.add(getExampleUser());
-        users.add(getExampleUser());
-        users.add(getExampleUser());
-        users.add(getExampleUser());
-        users.add(getExampleUser());
-        users.add(getExampleUser());
-        users.forEach(user -> System.out.println(user));
+        userRepository.save(getExampleUser());
+        userRepository.save(getExampleUser());
+        userRepository.save(getExampleUser());
+        userRepository.save(getExampleUser());
+        userRepository.save(getExampleUser());
+        userRepository.save(getExampleUser());
+        userRepository.save(getExampleUser());
+        userRepository.findAll().forEach(user -> System.out.println(user));
+
         //users.forEach(System.out::println);
     }
 
     public User getUser(int id) {
-        return id >= users.size() ? null : users.get(id);
+        return userRepository.findOne((long)id);
     }
 
     public User getExampleUser() {
-        User user = new User(1L, firstNameGenerator.getRandomFirstName(), lastNameGenerator.getRandomLastName(), "39333423");
+        User user = new User(firstNameGenerator.getRandomFirstName(), lastNameGenerator.getRandomLastName(), "39333423");
         return user;
     }
 
     public List<User> getUsersByFirstName(String firstName) {
-        List<User> userList = users.stream()
+        List<User> userList = StreamSupport.stream(userRepository.findAll().spliterator(),false)
                 .filter(user -> user.getFirstName().equals(firstName)).collect(Collectors.toList());
         return userList;
     }
 
     public List<User> getAllUsers() {
-
-        return users;
+        List<User> userList = StreamSupport.stream(userRepository.findAll().spliterator(),false).collect(Collectors.toList());
+        return userList;
 
     }
 
     public void addUser(User user) {
-        users.add(user);
+        userRepository.save(user);
     }
 }

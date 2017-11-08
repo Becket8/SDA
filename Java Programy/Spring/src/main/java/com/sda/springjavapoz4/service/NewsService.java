@@ -14,6 +14,7 @@ public class NewsService {
 
     private List<News> newsList;
 
+
     @Autowired
     UserService userService;
 
