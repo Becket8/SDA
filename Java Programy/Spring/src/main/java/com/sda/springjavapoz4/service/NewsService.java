@@ -1,71 +1,79 @@
 package com.sda.springjavapoz4.service;
 
 import com.sda.springjavapoz4.model.News;
+import com.sda.springjavapoz4.repository.NewsRepository;
+import com.sda.springjavapoz4.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @Component
 public class NewsService {
 
-    private List<News> newsList;
+    @Autowired
+
+    NewsRepository newsRepository;
 
 
     @Autowired
     UserService userService;
 
+    @Autowired
+    UserRepository userRepository;
+
 
     public NewsService() {
-        this.newsList = new ArrayList<>();
 
     }
 
-@PostConstruct
-    public void init(){
-    newsList.add(newNews());
-    newsList.add(newNews());
-    newsList.add(newNews());
-    newsList.add(newNews());
-    newsList.add(newNews());
-    newsList.add(newNews());
+    @PostConstruct
+    public void init() {
+        newsRepository.save(newNews());
+        newsRepository.save(newNews());
+        newsRepository.save(newNews());
+        newsRepository.save(newNews());
+        newsRepository.save(newNews());
+        newsRepository.save(newNews());
 
-}
+    }
 
     public News newNews() {
-        News news = new News(1L,
+        News news = new News(
                 "gdsggs",
-                "Lorem ipsum dolor sit amet,\n" +
-                "            consectetur adipisicing elit. Ab adipisci aliquid architecto\n" +
-                "            at atque culpa dolor dolore ducimus earum et excepturi\n" +
-                "            explicabo harum ipsa, minus molestiae mollitia necessitatibus\n" +
-                "            nobis nostrum, odit officiis perferendis quis sed\n" +
-                "            similique sunt tempora ullam voluptates.\n" +
-                "            Accusantium aut ex, fuga fugit iste maiores nemo repellat sed.",
+                "opis opis opis",
                 LocalDate.now(),
                 "path1",
                 "path2",
-                userService.getExampleUser());
+                userRepository.findOne((long)2));
         return news;
 
     }
 
     public List<News> getAllService() {
-        return newsList;
+        List<News> collect = StreamSupport.stream(newsRepository.findAll().spliterator(), false).collect(Collectors.toList());
+        return collect;
     }
 
 
     public News getNews(int id) {
-        News news = newsList.get(id);
+        News news = newsRepository.findOne((long) id);
         return news;
     }
 
     public int addNews(News news) {
-        news.setAuthor(userService.getExampleUser());
-        newsList.add(news);
-    return newsList.size()-1;
+        long id = newsRepository.save(news).getId();
+        return (int) id;
+    }
+
+    public int saveNews(News news) {
+        return (int) newsRepository.save(news).getId();
     }
 }

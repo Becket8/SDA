@@ -2,6 +2,7 @@ package com.sda.springjavapoz4.controller;
 
 import com.sda.springjavapoz4.model.News;
 import com.sda.springjavapoz4.service.NewsService;
+import com.sda.springjavapoz4.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,9 @@ public class NewsController {
 
     @Autowired
     NewsService newsService;
+
+    @Autowired
+    UserService userService;
     //Rzutowanie na nasz formularz allNews <form> atrybutem @ModelAttribute
     @PostMapping
     public String postNews(@ModelAttribute News news){

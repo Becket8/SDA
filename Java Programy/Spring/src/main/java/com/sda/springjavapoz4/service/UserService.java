@@ -58,9 +58,7 @@ public class UserService {
     }
 
     public List<User> getUsersByFirstName(String firstName) {
-        List<User> userList = StreamSupport.stream(userRepository.findAll().spliterator(),false)
-                .filter(user -> user.getFirstName().equals(firstName)).collect(Collectors.toList());
-        return userList;
+        return userRepository.findByFirstName(firstName);
     }
 
     public List<User> getAllUsers() {
