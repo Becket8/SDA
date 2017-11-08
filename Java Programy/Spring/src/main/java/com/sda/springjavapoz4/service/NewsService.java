@@ -61,4 +61,10 @@ public class NewsService {
         News news = newsList.get(id);
         return news;
     }
+
+    public int addNews(News news) {
+        news.setAuthor(userService.getExampleUser());
+        newsList.add(news);
+    return newsList.size()-1;
+    }
 }

@@ -1,18 +1,24 @@
 package com.sda.springjavapoz4.controller;
 
+import com.sda.springjavapoz4.model.News;
 import com.sda.springjavapoz4.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+
 @Controller
 @RequestMapping("news")
 public class NewsController {
 
     @Autowired
     NewsService newsService;
+    //Rzutowanie na nasz formularz allNews <form> atrybutem @ModelAttribute
+    @PostMapping
+    public String postNews(@ModelAttribute News news){
+        int index = newsService.addNews(news);
+        return  "redirect:/news/" + index;
+    }
 
     @GetMapping
     public ModelAndView getAllNews(){
