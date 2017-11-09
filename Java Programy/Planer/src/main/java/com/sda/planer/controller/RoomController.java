@@ -22,14 +22,14 @@ public class RoomController {
 
     @GetMapping
     public ModelAndView getAllRooms() {
-        ModelAndView modelAndView = new ModelAndView("room");
+        ModelAndView modelAndView = new ModelAndView("allRooms");
         modelAndView.addObject("room", roomService.getAllRooms());
         return modelAndView;
     }
 
     @GetMapping("/{id}")
     public ModelAndView getRoom(@PathVariable("id") int id) {
-        ModelAndView modelAndView = new ModelAndView("room");
+        ModelAndView modelAndView = new ModelAndView("allRooms");
         modelAndView.addObject("room", roomService.getRoom(id));
         return modelAndView;
     }
