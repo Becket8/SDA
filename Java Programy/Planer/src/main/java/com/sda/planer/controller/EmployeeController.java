@@ -1,21 +1,21 @@
-package com.sda.planer.planer.controller;
+package com.sda.planer.controller;
 
-import com.sda.planer.planer.model.Employee;
-import com.sda.planer.planer.repository.EmployeeRepository;
-import com.sda.planer.planer.service.EmployeeService;
+import com.sda.planer.model.Employee;
+import com.sda.planer.repository.EmployeeRepository;
+import com.sda.planer.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.jws.WebParam;
-
+@Controller
 @RequestMapping("/employees")
 public class EmployeeController {
 
     @Autowired
-    EmployeeRepository employeeRepository;
+    private EmployeeRepository employeeRepository;
 
-    EmployeeService employeeService;
+    private EmployeeService employeeService;
 
     @Autowired
     public EmployeeController(EmployeeService employeeService) {
@@ -41,7 +41,7 @@ public class EmployeeController {
     @PostMapping
     public String saveUser(@ModelAttribute Employee employee) {
         employeeService.addEmployee(employee);
-        return "redirect:/employee";
+        return "redirect:/employees";
 
     }
 

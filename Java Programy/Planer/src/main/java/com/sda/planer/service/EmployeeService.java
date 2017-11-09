@@ -1,8 +1,8 @@
-package com.sda.planer.planer.service;
+package com.sda.planer.service;
 
 
-import com.sda.planer.planer.model.Employee;
-import com.sda.planer.planer.repository.EmployeeRepository;
+import com.sda.planer.model.Employee;
+import com.sda.planer.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
