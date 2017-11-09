@@ -12,8 +12,6 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/employees")
 public class EmployeeController {
 
-    @Autowired
-    private EmployeeRepository employeeRepository;
 
     private EmployeeService employeeService;
 
@@ -39,7 +37,7 @@ public class EmployeeController {
     }
 
     @PostMapping
-    public String saveUser(@ModelAttribute Employee employee) {
+    public String saveEmployee(@ModelAttribute Employee employee) {
         employeeService.addEmployee(employee);
         return "redirect:/employees";
 
